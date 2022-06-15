@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
-    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     
 </head>
 <body>
@@ -59,6 +59,8 @@
                 <div class="video">
                     <div class="video_tri1"></div>
                     <div class="video_tri2"></div>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8a-EObAhYrg" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
         
                 <div class="header_text">
@@ -72,16 +74,11 @@
                         but they are only machines serving humans.</p>
                 </div>
         
-                <div class="button">  <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                    width="240.000000pt" height="50.000000pt" viewBox="0 0 240.000000 60.000000"
-                    preserveAspectRatio="xMidYMid meet">
-                   
-                   <g transform="translate(0.000000,70.000000) scale(0.100000,-0.100000)"
-                   fill="#fff" stroke="none">
-                   <path d="M97 602 l-97 -97 0 -253 0 -252 1088 0 1087 0 113 113 112 112 0 238
-                   0 237 -1103 0 -1102 0 -98 -98z"/>
-                   </g>
-                   </svg></div>
+                <div class="button"> 
+                    <div class="main_button_tri1"></div>
+                    <div class="main_button_tri2"></div>
+                     <p>WATCH MORE</p>
+                    </div>
         
         
                 <div class="ps_box">
@@ -103,7 +100,7 @@
             </div>
 
             <div class="sec_button">
-           
+                <p>WATCH MORE</p>
             </div>
 
             <div class="icon_box">
@@ -147,6 +144,7 @@
             <div class="android_button">
                 <div class="and_tri1"></div>
                 <div class="and_tri2"></div>
+                <p>WATCH ALL CHARACTER</p>
             </div>
         </div>
         <div class="and_img"></div>
@@ -159,16 +157,51 @@
 
 
 <article>
-    <div class="prev"></div>
+
 
     <div class="art_box">
-        <div class="art_text">
-          <span>SCREENSHOTS</span>
+        <div class="art_box_text">
+            <span>BASICS GUIDE</span>
+    
+            <h1>WAYS TO BEGIN<br>
+                YOUR ADVENTURE</h1>
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="150.000000pt" height="10.000000pt"
+                viewBox="0 0 145.000000 10.000000" preserveAspectRatio="xMidYMid meet">
+    
+                <g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" fill="#c252e1" stroke="none">
+                    <path d="M0 50 l0 -50 350 0 349 0 34 30 35 30 366 0 c359 0 366 0 366 20 0
+            20 -7 20 -750 20 l-750 0 0 -50z" />
+                </g>
+            </svg>
+    
         </div>
-        <div class="art_text2"></div>
+        <div class="art_button">
+            <div class="art_button_tri"></div>
+            <ul>
+                <li>
+                    <p class="on">INTERACTIVE FILM</p>
+                </li>
+                <li>
+                    <p>3MAIN CHARACTER</p>
+                </li>
+                <li>
+                    <p>MANY CHALLENGES</p>
+                </li>
+                <li>
+                    <p>DELIVER A STAND-OUT PERFORMANCE</p>
+                </li>
+            </ul>
+    
+        </div>
+        <div class="art_image">
+    
+            <div class="art_img_box2 video1">
+                <div class="art_img_tri"></div>
+            </div>
+    
+    
+        </div>
     </div>
-
-    <div class="next"></div>
 
 </article>
 
@@ -335,7 +368,40 @@
 
     </div>
 
+<script>
+  $(document).ready(function() {
+            var w = $(".art_button ul li").height();            
+            $(".art_button").append("<span></span>");
+            $(".art_button ul li").on("click", function() {
+                var index = $(this).index(); 
+                console.log(index);
+                $(this).find("p").addClass("on");
+                $(this).siblings().find("p").removeClass("on");
+                $(".art_button span").stop().animate({
+                    top: index * w +80
+                }, "fast", "swing");
+        
+            });
+            $('.art_button ul li').eq(0).click(function(){
+                $('.art_img_box2').css("background-image",'url(../img/img4.jpg)')
+                .css('transition','0.5s ease');
+            });
+            $('.art_button ul li').eq(1).click(function(){
+                $('.art_img_box2').css("background-image",'url(../img/img1.jpg)')
+                .css('transition','0.5s ease');
+            });
+            $('.art_button ul li').eq(2).click(function(){
+                $('.art_img_box2').css("background-image",'url(../img/img5.jpeg)')
+                .css('transition','0.5s ease');
+            });
+            $('.art_button ul li').eq(3).click(function(){
+                $('.art_img_box2').css("background-image",'url(../img/img6.jpg)')
+                .css('transition','0.5s ease').css("background-position",'center');
+            });
 
+        });
+
+</script>
     
 </body>
 </html>
