@@ -29,11 +29,35 @@ align-items: center; justify-content: center;}
 .my_box{width:350px; height: 60px;
 display: flex; justify-content: space-evenly; align-items: center;}
 .my{width:10px; height: 60px; display: flex;
-    align-items: center; justify-content: center;}
+    align-items: center; justify-content: center; position:relative;}
 .my img{width:25px;}
+.my a{content: ""; width:15px; height: 15px; position:absolute;
+background-color: #c252e1; border-radius: 50%; font-size: 12px; top:20px;
+color:#fff; text-align: center; line-height: 15px; transition:0.5s ease;}
+.my:hover >a{animation-name: over; animation-duration: 0.5s;
+animation-fill-mode: both;animation-direction: alternate;}
+
+.my img{z-index: 2; background-color: #17161b;}
+
+@keyframes over{
+    0%{top:20px; right:-10px; z-index: 1;}
+    50%{top:5px; right:-10px;  z-index: 1;}
+    100%{top:12px;  right:-10px; z-index: 3;}
+}
+
+
+
 .my_button{width:150px; height: 40px; background-color: #fff; 
-    position:relative; display: flex; align-items: center; justify-content: center;}
-    .my_button span{font-weight: 700; color:#c252e1;}    
+    position:relative; display: flex; align-items: center; justify-content: center;
+overflow: hidden; cursor:pointer;}
+    .my_button span{font-weight: 700; color:#c252e1; z-index: 3;}    
+.my_button::before{   content:'';
+    width:175px; height: 45px; background-color: #c252e1;
+    transition:0.3s ease;
+transform: translateX(-190px) skew(-45deg);position:absolute;}
+.my_button:hover::before{transform: translateX(0px)skew(-45deg);}
+.my_button:hover >span{color:#fff;}
+
 
 .my_tri1{border-top: 10px solid #17161b;
     border-right: 10px solid transparent;  position:absolute;
@@ -60,10 +84,10 @@ background-position:150px 100px; position:relative;}
 .header_text{widtH:100%; height:35px; 
      margin:2% 0; display: flex; justify-content: space-between; align-items: center;}
 .header_text span{background-color: #000; color:#fff; padding:5px;}
-.hea_box h1{font-size: 60px; font-family: 'Titillium Web'}
-.hea_box p{margin-top:30px; font-size: 20px; font-family: 'Quicksand'; width:500px;}
+.hea_box h1{font-size: 60px; font-family: 'Titillium Web';color:#fff;}
+.hea_box p{margin-top:30px; font-size: 20px; font-family: 'Quicksand'; width:500px;
+    color:#ccc;}
 .header_text img{width:18px;}
-
      .video{width:500px; height: 250px;
     position:relative;}
 .video_tri1{border-top: 25px solid #262a49;
@@ -72,11 +96,28 @@ background-position:150px 100px; position:relative;}
     .video_tri2{border-bottom: 25px solid #262a49;
         border-left: 25px solid transparent;  position:absolute;
        right:0; bottom:0;}
-
+ 
 
 .hea_box{width:100%; height: 300px; }
 .button{width:250px; height: 70px; background-color: rgb(255, 255, 255);
-position:relative; display: flex; justify-content: center; align-items: center;}
+position:relative; display: flex; justify-content: center; align-items: center;
+overflow: hidden; cursor:pointer;}
+.main_button_tri1{border-top: 25px solid #8d93bf;
+    border-right: 25px solid transparent;  position:absolute;
+    top:0px; left:0px;}
+.main_button_tri2{border-bottom: 25px solid #9ba2cf;
+    border-left: 25px solid transparent;  position:absolute;
+   right:0; bottom:0;}
+.button p{font-size:20px; font-weight: 700; color:#c252e1; z-index: 3;
+transition:0.3s ease;}
+.button::before{
+    content:'';
+    width:275px; height: 85px; background-color: #c252e1;
+    transition:0.3s ease;
+transform: translateX(-290px) skew(-45deg);position:absolute; }
+.button:hover::before{transform: translateX(0px)skew(-45deg);}
+.button:hover >p{color:#fff;}
+
 .ps{width:100px; height: 60px; margin:1%;
 display: flex; align-items: center; justify-content: center;}
 .ps_box{display: flex; width:100%;}
@@ -85,14 +126,13 @@ display: flex; align-items: center; justify-content: center;}
 .head_icon_box{width:280px; height: 35px; 
 display: flex; justify-content: space-around;}
 .head_icon{width:30px; height: 30px;
-    display: flex; align-items: center; justify-content: center;}
-.main_button_tri1{border-top: 25px solid #8d93bf;
-    border-right: 25px solid transparent;  position:absolute;
-    top:0px; left:0px;}
-.main_button_tri2{border-bottom: 25px solid #9ba2cf;
-    border-left: 25px solid transparent;  position:absolute;
-   right:0; bottom:0;}
-.button p{font-size:20px; font-weight: 700; color:#c252e1;}
+    display: flex; align-items: center; justify-content: center; cursor:pointer;
+      }
+.head_icon img{   transition:0.5s ease;}
+.head_icon:hover >img{transform: scale(1.3);}
+
+
+
 
 section{width:100%; height: 870px; background-color: #f2f3f5;margin:0 auto;
 display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -124,12 +164,25 @@ flex-direction: column; justify-content: space-evenly; align-items: center; }
 display:flex; justify-content: center; align-items: center; flex-direction: column;}
 .and_img{width:500px; height: 773px; background-image: url(../img/ch.png);
 background-repeat: no-repeat; background-size: 312px;}
-.android_button{width:350px; height: 70px; background-color: #c252e1; position:relative;}
+
 .android_text{width:420px; height: 300px; ;}
 .and_box>h1{position:absolute; z-index: -1; font-size: 200px; top:-26px; color:#eee;}
 .android_text span{background-color: #000; color:#fff; padding:5px;
     font-family: 'Quicksand'}
     .android_text h1{font-size: 50px; line-height: 50px; margin:15px 0;}
+
+
+.android_button{width:350px; height: 70px; background-color: #c252e1; position:relative;
+display: flex; align-items: center; justify-content: center; overflow: hidden; cursor:pointer;}
+.android_button p{z-index: 3; font-size: 20px; font-weight: 700;transition:0.3s ease;}
+.android_button::before{
+    content:'';
+    width:385px; height: 70px; background-color: #2a2356;
+    transition:0.3s ease;
+transform: translateX(-420px) skew(-30deg);position:absolute; }
+.android_button:hover::before{transform: translateX(-10px)skew(-30deg);}
+.android_button:hover >p{color:#fff;}
+
 
 .and_tri{position: absolute; width:0; height: 0; border-bottom: 60px solid white;
     border-right: 60px solid transparent; top:-60px; left:0;}
@@ -246,6 +299,8 @@ display: flex; flex-direction: column; justify-content: space-evenly;
 align-items: center;}
 .stay_icon{width:50px; height: 40px;
 display: flex; align-items: center; justify-content: center;}
+.stay_icon img{   transition:0.5s ease;}
+.stay_icon:hover >img{transform: scale(1.3);}
 
 
 
