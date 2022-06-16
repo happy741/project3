@@ -12,6 +12,7 @@
 <body>
     <div id="wrap">
         <header>
+         
             <nav>
                 <div class="logo_box">
                     <div class="logo"><img src="img/logo.png" alt="#"></div>
@@ -40,7 +41,9 @@
         
             <div class="header_img">
                 <div class="head_title"><img src="img/title.png" alt="#"></div>
-               
+              <div class="light">
+                  <img src="img/light.png" alt="">
+              </div>
             </div>
           
         
@@ -214,27 +217,58 @@
     
         <h1>GAME IMAGE</h1>
         <div class="art_img1">
-            <div class="img1_1 aa"></div>
-            <div class="img1_1 bb"></div>
+            <div class="img1_1 aa">
+                <div class="img_icon">
+                    <img src="img/plus.png" alt="">
+                </div>
+            </div>
+            <div class="img1_1 bb">
+                <div class="img_icon">
+                    <img src="img/plus.png" alt="">
+                </div>
+            </div>
         </div>
+
         <div class="art_img2">
             <div class="img2_22">
-                <div class="img2_1 cc"></div>
-                <div class="img2_1 dd"></div>
+                <div class="img2_1 cc">
+                    <div class="img_icon">
+                        <img src="img/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="img2_1 dd">
+                    <div class="img_icon">
+                        <img src="img/plus.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="img2_2 gg"></div>
+            <div class="img2_2 gg">
+                <div class="img_icon">
+                    <img src="img/plus.png" alt="">
+                </div>
+            </div>
         
         </div>
 
         <div class="art_img3">
-            <div class="img3_1 ee"></div>
-            <div class="img3_1 ff"></div>
+            <div class="img3_1 ee">
+                <div class="img_icon">
+                    <img src="img/plus.png" alt="">
+                </div>
+            </div>
+            <div class="img3_1 ff">
+                <div class="img_icon">
+                    <img src="img/plus.png" alt="">
+                </div>
+            </div>
         </div>
 
         <div class="art_circle">
-            <img src="img/cir1.png" alt="" id="a1">
-            <img src="img/cir2.png" alt="" id="a2">
-            <img src="img/cir3.png" alt="" id="a3">
+            <div class="circle_box">
+                <img src="img/cir1.png" alt="" id="ab1">
+                <img src="img/cir2.png" alt="" id="ab2">
+                <img src="img/cir3.png" alt="" id="ab3">
+            </div>
         </div>
 
     </div>
@@ -427,7 +461,12 @@
     </div>
 
 <script>
-
+    $(function(){
+        $('.img2_1').on(mouseover,function(){
+            $(this).addClass('scale')
+        });
+     
+    });
 
 </script>
     
