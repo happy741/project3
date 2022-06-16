@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    
+    <script src="js/guid.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -39,10 +39,10 @@
             </nav>
         
             <div class="header_img">
-                <img src="img/340303460109211.png" alt="" id="cir">
                 <div class="head_title"><img src="img/title.png" alt="#"></div>
+               
             </div>
-        
+          
         
             <div class="header_box">
         
@@ -197,7 +197,7 @@
         </div>
         <div class="art_image">
     
-            <div class="art_img_box2 video1">
+            <div class="art_img_box2">
                 <div class="art_img_tri"></div>
             </div>
     
@@ -210,12 +210,34 @@
 
 
 
-       <div class="art_img">
-
+    <div class="art_img">
+    
         <h1>GAME IMAGE</h1>
-        <div class="art_img_box"></div>
-        <div class="art_text3"></div>
-       </div>
+        <div class="art_img1">
+            <div class="img1_1 aa"></div>
+            <div class="img1_1 bb"></div>
+        </div>
+        <div class="art_img2">
+            <div class="img2_22">
+                <div class="img2_1 cc"></div>
+                <div class="img2_1 dd"></div>
+            </div>
+            <div class="img2_2 gg"></div>
+        
+        </div>
+
+        <div class="art_img3">
+            <div class="img3_1 ee"></div>
+            <div class="img3_1 ff"></div>
+        </div>
+
+        <div class="art_circle">
+            <img src="img/cir1.png" alt="" id="a1">
+            <img src="img/cir2.png" alt="" id="a2">
+            <img src="img/cir3.png" alt="" id="a3">
+        </div>
+
+    </div>
 
 
 
@@ -363,6 +385,40 @@
 
 
        <footer>
+        <div class="steam">
+            <div class="steam_iicon"><img src="img/steam.png" alt="#"></div>
+            <div class="steam_iicon"><img src="img/steam2.png" alt="#"></div>
+            <div class="steam_iicon"><img src="img/steam3.png" alt="#"></div>
+            <div class="steam_iicon"><img src="img/steam4.png" alt="#"></div>
+            <div class="steam_iicon"><img src="img/steam5.png" alt="#"></div>
+        </div>
+
+        <div class="footer_text">
+            <div class="esrb"><img src="img/esrb.png" alt=""></div>
+            <p>Quantic Dream upholds the values of diversity and inclusivity since its inception 25 years ago. Unique and different, each member of our team was recruited for their talent and personality, and for who they are as a human being. This diversity of perspective is reflected not only in our team but also in the experiences we create.</p>
+
+        </div>
+        
+        <div class="footer_bar"></div>
+
+        <div class="footer_menu">
+
+            <div class="footer_menu_box">
+            <div class="logo2"><img src="img/logo.png" alt="#"></div>
+            <ul>
+                <li><a href="">SUPPORT</a> </li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">LICENSING</a></li>
+                <li><a href="">POWERD BY WEBFLOW</a></li>
+            </ul>
+            </div>
+            <div class="footer_icon">
+                <div class="footer_icon2"><img src="img/1.png" alt="#"></div>
+                <div class="footer_icon2"><img src="img/2.png" alt="#"></div>
+                <div class="footer_icon2"><img src="img/3.png" alt="#"></div>
+                <div class="footer_icon2"><img src="img/4.png" alt="#"></div>
+            </div>
+        </div>
 
        </footer>
 
@@ -371,37 +427,7 @@
     </div>
 
 <script>
-  $(document).ready(function() {
-            var w = $(".art_button ul li").height();            
-            $(".art_button").append("<span></span>");
-            $(".art_button ul li").on("click", function() {
-                var index = $(this).index(); 
-                console.log(index);
-                $(this).find("p").addClass("on");
-                $(this).siblings().find("p").removeClass("on");
-                $(".art_button span").stop().animate({
-                    top: index * w +80
-                }, "fast", "swing");
-        
-            });
-            $('.art_button ul li').eq(0).click(function(){
-                $('.art_img_box2').css("background-image",'url(../img/img4.jpg)')
-                .css('transition','0.5s ease');
-            });
-            $('.art_button ul li').eq(1).click(function(){
-                $('.art_img_box2').css("background-image",'url(../img/img1.jpg)')
-                .css('transition','0.5s ease');
-            });
-            $('.art_button ul li').eq(2).click(function(){
-                $('.art_img_box2').css("background-image",'url(../img/img5.jpeg)')
-                .css('transition','0.5s ease');
-            });
-            $('.art_button ul li').eq(3).click(function(){
-                $('.art_img_box2').css("background-image",'url(../img/img6.jpg)')
-                .css('transition','0.5s ease').css("background-position",'center');
-            });
 
-        });
 
 </script>
     
