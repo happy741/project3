@@ -254,7 +254,7 @@ align-items: center;}
 .img3_1{width:330px; height:280px; }
 
 .art_circle{width:500px; height: 500px;
-position:absolute; top:50%; right:80%; z-index: -1;}
+position:absolute; top:60%; right:70%; z-index: -1;}
 #a1{position:absolute; animation : circle; animation-duration: 10s; animation-iteration-count: infinite;}
 #a2{position:absolute;  animation : circle2; animation-duration: 10s; animation-iteration-count: infinite;
 animation-direction: alternate; }
