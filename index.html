@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUANTIC DREAM </title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main_tablet.css">
+    <link rel="stylesheet" href="css/main_mobile.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/guid.js"></script>
 </head>
@@ -18,13 +20,15 @@
                     <div class="logo"><img src="img/logo.png" alt="#"></div>
                     <div class="logo_bar"></div>
                     <div class="logo_text"><img src="img/logo2.png" alt="#"></div>
-                    <ul class="memu">
+                    <ul class="menu">
                         <li><a href="#"> GAMES</a>
                             <ul class="sub">
-                                <li><a href="#"><img src="img/game1.png" alt="#"></a> </li>
-                                <li><a href="#"> <img src="img/game2.png" alt="#"></a></li>
-                                <li><a href="#"><img src="img/game3.png" alt="#"></a></li>
-                                <li><a href="#"><img src="img/game4.png" alt="#"></a></li>
+                                    <div id="sub_box">
+                                       <a href="#"> <img src="img/game1.png" alt="#"></a>
+                                       <a href="#"><img src="img/game2.png" alt="#"></a>
+                                        <a href="#"> <img src="img/game3.png" alt="#"></a>
+                                            <a href="#"> <img src="img/game4.png" alt="#"></a>
+                                    </div>
                             </ul>
                         </li>
                     
@@ -259,12 +263,12 @@
             <div class="art_img1">
                 <div class="img1_1 aa">
                     <div class="img_icon">
-                        <img src="img/plus.png" alt="#" id="plus_img">
+                        <img src="img/plus2.png" alt="#" id="plus_img">
                     </div>
                 </div>
                 <div class="img1_1 bb">
                     <div class="img_icon">
-                        <img src="img/plus.png" alt="#">
+                        <img src="img/plus2.png" alt="#">
                     </div>
                 </div>
             </div>
@@ -273,18 +277,18 @@
                 <div class="img2_22">
                     <div class="img2_1 cc">
                         <div class="img_icon">
-                            <img src="img/plus.png" alt="#">
+                            <img src="img/plus2.png" alt="#">
                         </div>
                     </div>
                     <div class="img2_1 dd">
                         <div class="img_icon">
-                            <img src="img/plus.png" alt="#">
+                            <img src="img/plus2.png" alt="#">
                         </div>
                     </div>
                 </div>
                 <div class="img2_2 gg">
                     <div class="img_icon">
-                        <img src="img/plus.png" alt="#">
+                        <img src="img/plus2.png" alt="#">
                     </div>
                 </div>
     
@@ -293,12 +297,12 @@
             <div class="art_img3">
                 <div class="img3_1 ee">
                     <div class="img_icon">
-                        <img src="img/plus.png" alt="#">
+                        <img src="img/plus2.png" alt="#">
                     </div>
                 </div>
                 <div class="img3_1 ff">
                     <div class="img_icon">
-                        <img src="img/plus.png" alt="#">
+                        <img src="img/plus2.png" alt="#">
                     </div>
                 </div>
             </div>
@@ -434,7 +438,7 @@
                     <h1>STAY CONNECTED</h1>
                     <div class="stay_bar">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="200.000000pt" height="10.000000pt"
-                            viewBox="0 0 195.000000 10.000000" preserveAspectRatio="xMidYMid meet">
+                            viewBox="0 0 100%.000000 100%.000000" preserveAspectRatio="xMidYMid meet">
     
                             <g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" fill="#c252e1"
                                 stroke="none">
@@ -454,12 +458,16 @@
                     <p>Quantic Dream will be responsible for your personal data.<br>
                         For more information please check our Privacy Policy</p>
     
-    
+                    <div class="email_span_box">
                     <input type="checkbox" id="input2">
-    
+                    <label for="input2"></label>
+                        
+                    
                     <span>I would like to receive news, special offers and other information from Nextgen and I am 16 years
                         old or
-                        older.</span>
+                        older.
+                    </span>
+                    </div>
                     <br>
                     <div class="email_input2">SUBMIT</div>
                 </div>
@@ -546,12 +554,6 @@
                 $('.stay').css('transform','scaleY(1)');
             }
 
-            $(function() {
-                $('.menu>li').mouseover(function(){
-                    $(this).children('.sub').stop().slideDown();
-                })
-            });
-
             $('.aa').click(function(){
                 $('#myModal').fadeIn();
                 $('.modal_img').css({'background-image':"url(img/1.jpeg)"
@@ -598,6 +600,19 @@
             $('.close').click(function(){
                 $('#myModal').fadeOut();
             });
+
+         
+                // $('.menu>li').mouseover(function(){
+                //     $(this).children('.sub').stop().slideDown();
+                //     // $(this).css('color',"#c252e1");
+ 
+                // }).mouseout(function(){
+                //     $('.sub').stop().slideUp();
+                // });
+                $('#input1').click(function(){
+                    $(this).css('outline','none');
+                });
+            
         });
 
         

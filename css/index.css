@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Megrim&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Quicksand:wght@300;400&family=Titillium+Web:wght@700;900&display=swap');
-
+@media(min-width:1100px){
 /* font-family: 'Quicksand', sans-serif;
 font-family: 'Titillium Web', sans-serif; */
 
@@ -66,12 +66,27 @@ transform: translateX(-190px) skew(-45deg);position:absolute;}
    right:0; bottom:0;}
 
 
-.menu>li{float: left;}
-.logo_box> ul{ align-items: center; text-align: center; height:47px;}
-.logo_box ul >li{padding:10px; float:left; width:100px;}
-.logo_box ul li a{font-size:13px; color:#999;}
-.sub{background-color: rgba(0, 0, 0, 0.5); height:205px;
-width:241px; display: none;}
+
+.menu{ align-items: center; text-align: center; height:47px; position:relative;
+z-index: 6;}
+.menu li{padding:10px; float:left; width:74px;}
+.menu li a{font-size:13px; color:#ddd; transition:0.5s ease;}
+.sub{ height:205px; margin-top:30%; 
+width:241px; text-align: center; transition:1s ease;  display: none;} 
+#sub_box img{width:90%; padding:5%;}
+.sub > li{background-color: rgba(0, 0, 0, 0.8); width:171px;
+          transition:.3s ease;}
+#sub_box{height:300px; margin-top:-2%; background-color: rgba(0,0,0,0.8);
+        height:363px;}
+
+/* .sub>li:nth-child(even){transform: translateX(-50%);}
+.sub>li:nth-child(odd){transform: translateX(50%);} */
+/* 
+.menu>li:hover .sub>li{transform: translateX(0%); display: block;} */
+.menu>li:hover .sub{display: block;}
+.menu>li:hover >a{color:#c252e1;}
+.sub>li:hover >a{color:#c252e1;}
+
 
 .header_img{width:45%; height: 800px; 
 background-image: url(../img/main3.png);
@@ -124,7 +139,7 @@ display: flex; align-items: center; justify-content: center;}
 .ps_box{display: flex; width:100%;}
 .ps img{width:90px;}
 #ps2{width:70px;}
-.head_icon_box{width:280px; height: 35px; 
+.head_icon_box{width:280px; height: 35px;
 display: flex; justify-content: space-around;}
 .head_icon{width:30px; height: 30px;
     display: flex; align-items: center; justify-content: center; cursor:pointer;
@@ -170,7 +185,8 @@ letter-spacing: 1px;}
 
 
 
-.icon_box{width:1100px; display: flex; justify-content: space-between;}
+.icon_box{width:1100px; display: flex; justify-content: space-between;
+margin-top:2%;}
 .icon{width:300px; height: 300px; display: flex;transform:scaleY(0);
 flex-direction: column; justify-content: space-evenly; align-items: center; }
 .icon img{width:100px;}
@@ -180,7 +196,7 @@ flex-direction: column; justify-content: space-evenly; align-items: center; }
 .icon1{transform: scaleY(0); transition:0.5s ease;}
 .icon2{transform: scaleY(0); transition:1s ease;}
 .icon3{transform: scaleY(0); transition:1.5s ease;}
-
+.icon p{width:300px; height:102px;}
 
 
 
@@ -285,8 +301,9 @@ align-items: center; cursor:pointer;}
     cursor:pointer;}
 .img3_1{width:330px; height:280px;position:relative;overflow: hidden; }
 .img_icon{position:absolute; position:absolute;
-top:45%; right:40%; opacity: 0; z-index: 2;transition:1.5s ease;
+top:35%; right:35%; z-index: 2;transition:1.5s ease;
 cursor: pointer;}
+.img_icon img{opacity: 0;}
 
 .modal{position:fixed; z-index: 5; padding-top:100px;
     left:0; top:0; width:100%; height:100%; overflow:auto;
@@ -320,7 +337,7 @@ font-size: 50px; font-weight: bold; transition:0.3s;}
     content: "";
     width:50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position:absolute;
     bottom:-45px;
     right:-45px;
@@ -332,7 +349,7 @@ font-size: 50px; font-weight: bold; transition:0.3s;}
     content: "";
     width:50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position:absolute;
     bottom:-45px;
     right:-45px;
@@ -344,7 +361,7 @@ font-size: 50px; font-weight: bold; transition:0.3s;}
     content: "";
     width:50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position:absolute;
     bottom:-45px;
     right:-45px;
@@ -354,17 +371,17 @@ font-size: 50px; font-weight: bold; transition:0.3s;}
 }
 
 .img1_1:hover::after{transform: scale(22);}
-.img1_1:hover .img_icon{opacity: 1;}
+.img1_1:hover .img_icon img{animation:rotate 1s ease; opacity: 1;}
 
 
 .img2_1:hover::after{transform: scale(16);}
-.img2_1:hover .img_icon{opacity: 1;}
+.img2_1:hover .img_icon img{animation:rotate 1s ease; opacity: 1;}
 
 .img2_2:hover::after{transform: scale(22);}
-.img2_2:hover .img_icon{opacity: 1;}
+.img2_2:hover .img_icon img{animation:rotate 1s ease; opacity: 1;}
 
 .img3_1:hover::after{transform: scale(22);}
-.img3_1:hover .img_icon{opacity: 1;}
+.img3_1:hover .img_icon img{animation:rotate 1s ease; opacity: 1;}
 
 
 
@@ -490,9 +507,9 @@ display: flex; align-items: center; justify-content: center;}
 .stay_text{width:500px; height: 274px; }
 .stay_text h1{font-size: 40px; color:#fff;}
 .stay_text p{font-size: 18px; margin-top:5%; color:#fff;}
-.email{width:500px; height: 256px;}
+.email{width:500px; height: 256px; position:relative;}
 .email p{margin:5% 0; color:#fff;}
-.email span{color:#fff;}
+.email span{color:#fff; display: inline-block; width:400px; margin-left:5%;}
 
 .email_input{width:400px; height: 55px; background-color: #3d4474;
 display: flex; justify-content: flex-end; position:relative;}
@@ -512,9 +529,14 @@ display: flex; justify-content: flex-end; position:relative;}
 
 #input1{width:370px; height: 55px; background-color: #3d4474; border:none;
 font-size: 20px; color:#eee;}
-#input2{width:14px; height: 14px; border:#c252e1; background-color: #c252e1;
-}
+/* #input2{width:14px; height: 14px; border:#c252e1; background-color: #c252e1;
+} */
 
+input[id='input2']{display: none;}
+input[id='input2']+label{
+    display: inline-block; width:14px; height:14px; background: url(../img/check.png); vertical-align:middle;
+position:absolute; bottom:36.5%;}
+input[id='input2']:checked +label{ background-position: -17px 0;}
 
 
 .email_input2{width:300px; height:40px; border:1px solid #ffffff;
@@ -614,3 +636,11 @@ justify-content: center; align-items: center; display: flex;}
         from {transform:scale(0)} 
         to {transform:scale(1)}
       }
+
+    @keyframes rotate{
+        0%{transform: rotate(-180deg)scale(1);}
+        50%{transform: rotate(90deg)scale(0.5);}
+        100%{transform: rotate(0)scale(1);}
+      
+    }
+}
