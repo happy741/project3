@@ -65,8 +65,8 @@ transform: translateX(-190px) skew(-45deg);position:absolute;}
     border-left: 10px solid transparent;  position:absolute;
    right:0; bottom:0;}
 
-
-
+   .overlay{display: none;}
+#resize_menu{display: none;}
 .menu{ align-items: center; text-align: center; height:47px; position:relative;
 z-index: 6;}
 .menu li{padding:10px; float:left; width:74px;}
@@ -91,7 +91,7 @@ width:241px; text-align: center; transition:1s ease;  display: none;}
 .header_img{width:45%; height: 800px; 
 background-image: url(../img/main3.png);
 background-size: 400px; background-repeat:no-repeat;
-background-position:150px 100px; position:relative;}
+background-position:20% 100px; position:relative;}
 .header_img img{width:80%;}
 
 .light{position:absolute; top:0; animation: light1 2s linear infinite;}
@@ -311,12 +311,16 @@ cursor: pointer;}
     display:none;}
 
 
-.close{position:absolute; top:5%; right:20%; color:#f1f1f1;
-font-size: 50px; font-weight: bold; transition:0.3s;}
+#modal_img_box{position:absolute; left:50%; top:50%;   transform:translate(-50%, -50%);
+    width:1070px; height:800px;}
+
+.close{position:absolute; color:#f1f1f1;
+font-size: 50px; font-weight: bold; transition:0.3s;
+right:0; top:0;}
 
 .close:hover{ color:#c252e1; text-decoration:none; cursor:pointer;}
 .modal_img{width:1000px; height:700px; background-color: #17161b;
-    position:absolute; position:50%,50%; left:25%;}
+    position:absolute; left:50%; top:50%;   transform:translate(-50%, -50%);}
 
 
 

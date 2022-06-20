@@ -20,14 +20,15 @@
     display: flex; justify-content: space-between;}
     .logo_box{display: flex; align-items: center;}
     .logo_bar{width:2px; height: 30px; background-color: #444;}
-    .logo_box img{width:60%;}
+    .logo_box img{width:70%;}
     .logo{width:10%; height: 60px; display: flex;
     align-items: center; justify-content: center;}
-    .logo_text{width:20%; height: 60px;
+    .logo_text{width:30%; height: 60px;
         display: flex;
         align-items: center; justify-content: center;}
     .my_box{width:350px; height: 60px;
-    display: flex; justify-content: space-evenly; align-items: center;}
+    display: flex; justify-content: space-evenly; align-items: center;
+    display:none;}
     .my{width:10px; height: 60px; display: flex;
         align-items: center; justify-content: center; position:relative;}
     .my img{width:25px;}
@@ -39,10 +40,47 @@
     
     .my img{z-index: 2; background-color: #17161b;}
     
+
+
+    #resize_menu{width:60px; height:60px; 
+    display: flex; align-items: center; cursor: pointer;}
+    #menu2{width:30px; height: 3px; background-color: #eee; position:relative;
+    cursor: pointer;}
     
+    #menu2::before{content:''; width:30px; height: 3px; background-color: #eee;
+    position:absolute; top:-10px;}
+    #menu2::after{content:''; width:30px; height: 3px; background-color: #eee;
+        position:absolute; top:10px;}
+
+    .overlay{width:0%; height:0%; position:fixed; z-index: 103;
+    top:-97px; right:-60px; background-color: rgba(0, 0, 0, 0.8); border-radius: 20%;
+        transition:0.5s ease;
+    }
+    .overlay_menu{position: relative; width: 100%; text-align: center; display:block; margin:103px 0 0 500px; 
+        }
+    .overlay_menu> li{ padding:2%;} 
+    .overlay_menu> li>a{color:#fff; font-size: 35px;  font-family: 'Titillium Web';
+        transition:0.5s ease;}
+    #overlay_sub_box> a>div{width:150px; height:300px;}
+    #overlay_sub_box> a{margin:1%;}
+    #overlay_sub_box:first-child{display: flex;  justify-content: center;}
+        .menua{background-image: url(../img/menu1.jpg); background-size: cover;
+        background-position: center;}
+        .menub{background-image: url(../img/menu2.jpg); background-size: cover;
+            background-position: center;}
+         .menuc{background-image: url(../img/menu3.jpg); background-size: cover;
+                background-position: center;}
+         .menud{background-image: url(../img/menu4.png); background-size: cover;
+                    background-position: center;}
+    .overlay_sub >li{ width:100%; height:40px; line-height: 2; padding:1%;}
+    .overlay_sub >li>a{color:#aaa; transition:0.5s ease;}
+    .overlay_sub{display: none; }
+    .close_2{ font-size: 200px; color:#aa6ebb; position:absolute;top:20%;}
+    .overlay_menu> li>a:hover{color:#c252e1;}
+    .overlay_sub >li>a:hover{color:#aa6ebb;}
     
-    
-    
+
+
     .my_button{width:150px; height: 40px; background-color: #fff; 
         position:relative; display: flex; align-items: center; justify-content: center;
     overflow: hidden; cursor:pointer;}
@@ -65,7 +103,7 @@
     
     
     .menu{ align-items: center; text-align: center; height:47px; position:relative;
-    z-index: 6;}
+    z-index: 6; display: none;}
     .menu li{padding:10px; float:left; width:74px;}
     .menu li a{font-size:13px; color:#ddd; transition:0.5s ease;}
     .sub{ height:205px; margin-top:30%; 
@@ -88,7 +126,7 @@
     .header_img{width:50%; height: 800px; 
     background-image: url(../img/main3.png);
     background-size: 375px; background-repeat:no-repeat;
-    background-position:3px 94px; position:relative;}
+    background-position:30% 94px; position:relative;}
     .header_img img{width:80%;}
     
     .head_title{display: flex; justify-content: center;}
@@ -291,7 +329,7 @@
     cursor:pointer;}
     .img1_1{width:49%; height:280px; position:relative;overflow: hidden; }
     
-    .img2_22{width:100%; height:280px; display: flex; justify-content: space-between;}
+    .img2_22{width:100%; height:280px; display: flex; justify-content: center;}
     .art_img2{width:98%; height:552px; transform:scaleY(0); transition:0.8s ease;
     display: flex; flex-direction: column; justify-content:space-evenly;
     align-items: center; cursor:pointer;}
@@ -299,7 +337,7 @@
     .img2_2{width:100%; height: 280px; position:relative; overflow: hidden;}
     
     .art_img3{width: 100%; height: 238px; transform:scaleY(0); transition:1.2s ease;
-        display: flex; justify-content:space-evenly;
+        display: flex; justify-content:center;
         cursor:pointer;}
     .img3_1{width:49%; height:280px;position:relative;overflow: hidden; }
     .img_icon{position:absolute; position:absolute;
@@ -308,17 +346,20 @@
     .img_icon img{opacity: 0;}
     
     .modal{position:fixed; z-index: 5; padding-top:100px;
-        left:0; top:0; width:100%; height:100%; overflow:auto;
+        left:50%; top:50%; width:100%; height:100%; overflow:auto;
         background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.5);
-        display:none;}
+        display:none; transform: translate(-50%, -50%);}
     
+#modal_img_box{position:absolute; left:50%; top:50%;   transform:translate(-50%, -50%);
+    width:760px; height:800px;}
+
     
-    .close{position:absolute; top:5%; right:20%; color:#f1f1f1;
+    .close{position:absolute; top:0; right:0; color:#f1f1f1;
     font-size: 50px; font-weight: bold; transition:0.3s;}
     
     .close:hover{ color:#c252e1; text-decoration:none; cursor:pointer;}
-    .modal_img{width:1000px; height:700px; background-color: #17161b;
-        position:absolute; position:50%,50%; left:25%;}
+    .modal_img{width:700px; height:700px; background-color: #17161b;
+        position:absolute; left:50%; top:50%;   transform:translate(-50%, -50%);}
     
     
     
@@ -372,17 +413,17 @@
         transition:0.7s ease;
     }
     
-    .img1_1:hover::after{transform: scale(22);}
+    .img1_1:hover::after{transform: scale(27);}
     .img1_1:hover .img_icon img{animation:rotate 1s ease; opacity: 1;}
     
     
-    .img2_1:hover::after{transform: scale(16);}
+    .img2_1:hover::after{transform: scale(27);}
     .img2_1:hover .img_icon img{animation:rotate 1s ease; opacity: 1;}
     
-    .img2_2:hover::after{transform: scale(22);}
+    .img2_2:hover::after{transform: scale(40);}
     .img2_2:hover .img_icon img{animation:rotate 1s ease; opacity: 1;}
     
-    .img3_1:hover::after{transform: scale(22);}
+    .img3_1:hover::after{transform: scale(27);}
     .img3_1:hover .img_icon img{animation:rotate 1s ease; opacity: 1;}
     
     
