@@ -77,10 +77,15 @@
                 </div>
 
                 <div id="resize_menu" onclick="openNav()">
-                    <div id="menu2"></div>
+                    <input type="checkbox" id='menu_icon'>
+                    <label for="menu_icon">
+                        <span></span>
+                        <span></span>
+                         <span></span>
+                    </label>
                 </div>
                 <div id="myNav" class="overlay">
-                    <a href="#" class="close_2" onclick="closeNav()"></a>&times;</a>
+                    <a href="#" class="close_2" onclick="closeNav()">&times;</a>
 
                     <div clss="overlay2">
                         <ul class="overlay_menu">
@@ -676,9 +681,18 @@
     }
     function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.height = "0%";
+    document.getElementsByClassName("close_2").style.display = "none";
+  
     }
+   
+//     $(function(){
+//     $('#resize_menu').click(function(){
+//         $('#myNav').addClass('.input_cke')
+//     });
+// });
 
 </script>
     
 </body>
-</html>
+</html>;
