@@ -572,7 +572,7 @@
     .stay_text p{font-size: 1.6vw; margin-top:5%; color:#fff;}
     .email{width:50%; height: 256px; position:relative;}
     .email p{margin:5% 0; color:#fff; font-size: 1.7vw;}
-    .email span{color:#fff; display: inline-block; width:400px; margin-left:5%; font-size: 1.6vw;}
+    .email span{color:#fff; display: inline-block; width:100%; margin-left:5%; font-size: 1.6vw;}
     
     .email_input{width:95%; height: 55px; background-color: #3d4474;
     display: flex; justify-content: flex-end; position:relative;}
