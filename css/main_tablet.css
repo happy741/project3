@@ -233,7 +233,7 @@
         .sec_button ::after{left:0; top:-2px;}
     
     .sec_button:hover{border-color:#c252e1;
-    color:lighten(#c252e1,50%);transition: .4s ease-in-out; color:#c252e1;
+    color:#c252e1;transition: .4s ease-in-out; color:#c252e1;
     letter-spacing: 1px;}
     .sec_button ::after{right:0; bottom:-2px;}
     .sec_button:hover ::after{width:100%;}
@@ -619,7 +619,7 @@
             .email_input2::after{left:0; top:-2px;}
         
         .email_input2:hover{border-color:#c252e1;
-        color:lighten(#c252e1,50%);transition: .4s ease-in-out; color:#c252e1;
+        color:#c252e1;transition: .4s ease-in-out; color:#c252e1;
         letter-spacing: 1px;}
         .email_input2::after{right:0; bottom:-2px;}
         .email_input2::before{right:0; bottom:-2px;}

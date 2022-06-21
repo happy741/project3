@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/main_mobile.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/guid.js"></script>
+    <script src="js/input_nav.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/scroll.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -23,12 +26,12 @@
                     <ul class="menu">
                         <li><a href="#"> GAMES</a>
                             <ul class="sub">
-                                <div id="sub_box">
+                                <li id="sub_box">
                                     <a href="#"> <img src="img/game1.png" alt="#"></a>
                                     <a href="#"><img src="img/game2.png" alt="#"></a>
                                     <a href="#"> <img src="img/game3.png" alt="#"></a>
                                     <a href="#"> <img src="img/game4.png" alt="#"></a>
-                                </div>
+                                </li>
                             </ul>
                         </li>
             
@@ -578,121 +581,6 @@
     
     </div>
 
-<script>
-    $(function(){
-        $(window).scroll(function(){
-            var ws=$(this).scrollTop();
-            var art_button=$('.art_button').offset().top;
-            if(ws>art_button-900){
-                $('.art_button').css('transform','scaleY(1)');
-                $('.art_image').css('transform','scaleY(1)');
-            }
-           
-            var icon1=$('header').offset().top;
-            if(ws>icon1+500){
-                $('.icon').css('transform','scaleY(1)');
-            }
-
-            var and=$('.android_box').offset().top;
-            if(ws>and-850){
-                $('.android_box').css('transform','scaleY(1)');
-            }
-
-            var art_img=$('.art_img').offset().top;
-            if(ws>art_img-600){
-                $('.art_img1').css('transform','scaleY(1)');
-                $('.art_img2').css('transform','scaleY(1)');
-                $('.art_img3').css('transform','scaleY(1)');
-            }
-
-            var stay=$('.news').offset().top;
-            if(ws>stay+100){
-                $('.stay').css('transform','scaleY(1)');
-            }
-
-            $('.aa').click(function(){
-                $('#myModal').fadeIn();
-                $('.modal_img').css({'background-image':"url(img/1.jpeg)"
-            ,'background-size':'cover','background-position':'center'});
-            });
-
-            $('.bb').click(function(){
-                $('#myModal').fadeIn();
-                $('.modal_img').css({'background-image':"url(img/2.jpeg)"
-            ,'background-size':'cover','background-position':'center'});
-            });
-
-            $('.cc').click(function(){
-                $('#myModal').fadeIn();
-                $('.modal_img').css({'background-image':"url(img/8.jpg)"
-            ,'background-size':'cover','background-position':'center'});
-            });
-
-            $('.dd').click(function(){
-                $('#myModal').fadeIn();
-                $('.modal_img').css({'background-image':"url(img/7.jpeg)"
-            ,'background-size':'cover','background-position':'center'});
-            });
-
-            $('.ee').click(function(){
-                $('#myModal').fadeIn();
-                $('.modal_img').css({'background-image':"url(img/6.jpeg)"
-            ,'background-size':'cover','background-position':'center'});
-            });
-
-            $('.ff').click(function(){
-                $('#myModal').fadeIn();
-                $('.modal_img').css({'background-image':"url(img/3.jpeg)"
-            ,'background-size':'cover','background-position':'center'});
-            });
-
-            $('.gg').click(function(){
-                $('#myModal').fadeIn();
-                $('.modal_img').css({'background-image':"url(img/4.jpeg)"
-            ,'background-size':'cover','background-position':'center'});
-            });
-
-
-            $('.close').click(function(){
-                $('#myModal').fadeOut();
-            });
-
-         
-           
-                $('#input1').click(function(){
-                    $(this).css('outline','none');
-                });
-
-                $('.overlay_menu>li').click(function(){
-                    $('.overlay_sub').stop().slideUp();
-                    $(this).find('.overlay_sub').stop().slideToggle();
-                   
-                });
-            
-        });
-
-     
-    });
-
-    function openNav() {
-    document.getElementById("myNav").style.width = "230%";
-    document.getElementById("myNav").style.height = "130%";
-    
-    }
-    function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-    document.getElementById("myNav").style.height = "0%";
-    document.getElementsByClassName("close_2").style.display = "none";
-  
-    }
-   
-//     $(function(){
-//     $('#resize_menu').click(function(){
-//         $('#myNav').addClass('.input_cke')
-//     });
-// });
-
-</script>
     
 </body>
 </html>
