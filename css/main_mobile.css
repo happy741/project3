@@ -185,14 +185,14 @@
         top:-97px; right:-60px; background-color: rgba(0, 0, 0, 0.9); border-radius: 20%;
             transition:0.5s ease;
         }
-        .overlay_menu{position: relative; width: 100%; height:100%; text-align: center; display:block; margin:251px 0 0 170px; 
+        .overlay_menu{position: relative; width: 100%; height:100%; text-align: center; display:block; margin:251px 0 0 200px; 
             }
         
         .overlay_menu> li{ padding:2%;} 
         .overlay_menu> li>a{color:#fff; font-size: 35px;  font-family: 'Titillium Web';
             transition:0.5s ease;}
       
-            .menu1234> a img{width:100px; height:170px;}
+            .menu1234 li> a img{width:100px; height:170px;}
             .menu1234{width:100%; height:170px; display: flex;}
             .overlay_sub >li{ width:100%; height:40px; line-height: 2; padding:1%;}
             .overlay_sub >li>a{color:#aaa; transition:0.5s ease;}
