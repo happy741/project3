@@ -97,8 +97,7 @@ width:241px; text-align: center; transition:1s ease; }
     height: 500px;
     background-color: coral;
     margin-right: 1%;
-    display: flex;
-    align-items: flex-end;
+    position:relative;
 }
 
 .main_img_text {
@@ -110,6 +109,8 @@ width:241px; text-align: center; transition:1s ease; }
     justify-content: space-between;
     color: #eee;
     margin-left:5%;
+    position:absolute;
+    bottom:0;
 }
 
 .text1 {
@@ -147,27 +148,27 @@ width:241px; text-align: center; transition:1s ease; }
 }
 
 .main1 {
-    background-image: url(../subimg/main1.jpg);
+    background-image: url(../subimg/main1_2.jpg);
     background-size: cover;
 
 }
 
 .main2 {
-    background-image: url(../subimg/main2.jpg);
+    background-image: url(../subimg/main2_2.jpg);
     background-size: cover;
 }
 .main3 {
-    background-image: url(../subimg/main3.jpg);
+    background-image: url(../subimg/main3_2.jpg);
     background-size: cover;
 }
 
 .main4 {
-    background-image: url(../subimg/main4.jpg);
+    background-image: url(../subimg/main4_1.jpg);
     background-size: cover;
 }
 
 .main5 {
-    background-image: url(../subimg/main5.png);
+    background-image: url(../subimg/main5_2.jpg);
     background-size: cover;
 }
 .main5{display: none;}
@@ -195,11 +196,16 @@ width:241px; text-align: center; transition:1s ease; }
     display: flex;
     justify-content: center;
     align-items: center;
+    transition:0.3s ease;
 }
+
+.main_game_box:hover{background-color: #333;}
+.click{background-color: #c252e1;}
 
 .main_game_img {
     width: 50px;
     height: 70px;
+    margin-left: 3%;
    
 }
 
@@ -267,6 +273,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    position:relative;
 
 }
 
@@ -285,7 +292,7 @@ input {
 .game_box_box {
     width: 200px;
     height: 390px;
- 
+    position:relative;
     display: flex;
     flex-direction: column;
  
@@ -293,13 +300,41 @@ input {
 
 
 .game{width:200px;
-        height:290px;}
+        height:290px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
 
 .game1 {
     background-image: url(../subimg/main1_1.jpg);
     background-size: cover;
     background-position: center;
+    transition: clip-path 400ms ease-out;
+    
 }
+.game:hover{clip-path: polygon(72% 0, 100% 50%, 75% 100%, 0% 100%, 22% 49%, 0% 0%);
+    
+    transform: translateX(10px);
+    transition:0.5s ease;
+    animation:bounce 0.3s ease;
+    filter: brightness(20%);
+ }
+
+
+    .game +span{
+        position:absolute;
+        bottom:30%;
+        transform: translateX(-20px);
+    font-size: 15px;
+    color:#c252e1;
+ opacity: 0;
+transition:0.2s ease;
+z-index: 5;}
+
+ .game:hover +span{opacity: 1;
+                    transform: translateX(40px);}
+
+
 
 .game2 {
     background-image: url(../subimg/main2_1.png);
@@ -385,11 +420,124 @@ input {
     color: #999;
 }
 .pp{margin-top: 6%;}
-.pp::before{content: "USD 79.00";
+
+
+.p_line::before{content: "USD 99.00";
     text-decoration:line-through;
     color:#999;
-    
+    position:absolute;
+    top:-120%;
+    font-size: 13px;
 }
+
+.p_line::after{ content: "-20%";
+background-color: #c252e1;
+padding:2px;
+position:absolute;
+right:0;
+top:-10px;
+font-family: 'Quicksand'
+
+}
+.p_line{margin-top: 15%; position:relative;}
+
+.p_line2::before{content: "USD 39.00";
+    text-decoration:line-through;
+    color:#999;
+    position:absolute;
+    top:-120%;
+    font-size: 13px;
+}
+
+.p_line2::after{ content: "-50%";
+background-color: #c252e1;
+padding:2px;
+position:absolute;
+right:0;
+top:-10px;
+font-family: 'Quicksand'
+
+}
+.p_line2{margin-top: 15%; position:relative;}
+.p_line3{margin-top: 15%; position:relative;}
+
+.p_line3::before{content: "USD 10.00";
+    text-decoration:line-through;
+    color:#999;
+    position:absolute;
+    top:-120%;
+    font-size: 13px;
+}
+
+.p_line3::after{ content: "-20%";
+background-color: #c252e1;
+padding:2px;
+position:absolute;
+right:0;
+top:-10px;
+font-family: 'Quicksand'
+
+}
+.p_line3{margin-top: 15%; position:relative;}
+
+.p_line4::before{content: "USD 43.00";
+    text-decoration:line-through;
+    color:#999;
+    position:absolute;
+    top:-120%;
+    font-size: 13px;
+}
+
+.p_line4::after{ content: "-20%";
+background-color: #c252e1;
+padding:2px;
+position:absolute;
+right:0;
+top:-10px;
+font-family: 'Quicksand'
+
+}
+
+.p_line5::before{content: "USD 35.00";
+    text-decoration:line-through;
+    color:#999;
+    position:absolute;
+    top:-120%;
+    font-size: 13px;
+}
+
+.p_line5::after{ content: "-20%";
+background-color: #c252e1;
+padding:2px;
+position:absolute;
+right:0;
+top:-10px;
+font-family: 'Quicksand'
+
+}
+.p_line5{margin-top: 15%; position:relative;}
+
+.p_line4{margin-top: 15%; position:relative;}
+
+.p_line6::before{content: "USD 69.00";
+    text-decoration:line-through;
+    color:#999;
+    position:absolute;
+    top:-120%;
+    font-size: 13px;
+}
+
+.p_line6::after{ content: "-50%";
+background-color: #c252e1;
+padding:2px;
+position:absolute;
+right:0;
+top:-10px;
+font-family: 'Quicksand'
+
+}
+.p_line6{margin-top: 15%; position:relative;}
+
 
 #filters {
     width: 270px;
@@ -449,3 +597,8 @@ footer{width:100%; height: 460px; background-color: #17161b; margin:0 auto;
     .footer_icon{width:200px; height:100px; display: flex; align-items: center;
         justify-content: space-evenly;} 
         .footer_icon img{width:20px;}
+
+    @keyframes bounce{
+       from{transform:translateX(15px);}
+       to{transform: translateX(10px);}
+    }
