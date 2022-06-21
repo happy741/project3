@@ -13,7 +13,7 @@
     background-image: url(../img/main4.png), linear-gradient(#262a49 50%,#b8bff0); background-size: 50%;
     background-repeat: no-repeat, repeat; background-position-y: 207px, 0px;}
     
-    
+    iframe{border:none; width:100%; height:100%;}
     
     
     nav{width:100%; height: 60px; background-color: #17161b; margin:0 auto;
@@ -81,17 +81,11 @@
     .overlay_menu> li{ padding:2%;} 
     .overlay_menu> li>a{color:#fff; font-size: 35px;  font-family: 'Titillium Web';
         transition:0.5s ease;}
-    #overlay_sub_box> a>div{width:150px; height:300px;}
-    #overlay_sub_box> a{margin:1%;}
-    #overlay_sub_box:first-child{display: flex;  justify-content: center;}
-        .menua{background-image: url(../img/menu1.jpg); background-size: cover;
-        background-position: center;}
-        .menub{background-image: url(../img/menu2.jpg); background-size: cover;
-            background-position: center;}
-         .menuc{background-image: url(../img/menu3.jpg); background-size: cover;
-                background-position: center;}
-         .menud{background-image: url(../img/menu4.png); background-size: cover;
-                    background-position: center;}
+        .menu1234{width:100%; height:270px;}
+    .menu1234> a img{width:150px; height:250px;}
+    .menu1234> a{margin:1%;}
+    .menu1234{display: flex;  justify-content: center;}
+       
     .overlay_sub >li{ width:100%; height:40px; line-height: 2; padding:1%;}
     .overlay_sub >li>a{color:#aaa; transition:0.5s ease;}
     .overlay_sub{display: none; }

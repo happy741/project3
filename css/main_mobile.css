@@ -191,24 +191,13 @@
         .overlay_menu> li{ padding:2%;} 
         .overlay_menu> li>a{color:#fff; font-size: 35px;  font-family: 'Titillium Web';
             transition:0.5s ease;}
-        #overlay_sub_box> a>div{width:200px; height:35px;}
-        #overlay_sub_box> a{margin:1%;}
-        #overlay_sub_box:first-child{width:100%; height:220px; display: flex;  justify-content: center;
-            flex-direction: column; 
-        align-items: center;}
-            .menua{background-image: url(../img/game1.png); background-size: cover;
-            background-position: center;}
-            .menub{background-image: url(../img/game2.png); background-size: cover;
-                background-position: center;}
-             .menuc{background-image: url(../img/game3.png); background-size: cover;
-                    background-position: center;}
-             .menud{background-image: url(../img/game4.png); background-size: cover;
-                        background-position: center;}
-                        
-        #overlay_sub_box {width:100%; height:500px;}
-        .overlay_sub >li{ width:100%; height:40px; line-height: 2; padding:1%;}
-        .overlay_sub >li>a{color:#aaa; transition:0.5s ease;}
-        .overlay_sub{display: none; }
+      
+            .menu1234> a img{width:100px; height:170px;}
+            .menu1234{width:100%; height:170px; display: flex;}
+            .overlay_sub >li{ width:100%; height:40px; line-height: 2; padding:1%;}
+            .overlay_sub >li>a{color:#aaa; transition:0.5s ease;}
+            .overlay_sub{display: none; }
+        
     
         .close_2{ font-size: 65px; color:#fff; position:absolute;top:10%; right:85px; cursor: pointer;
         z-index: 999;}
@@ -217,7 +206,7 @@
         .overlay_menu> li>a:hover{color:#c252e1;}
         .overlay_sub >li>a:hover{color:#aa6ebb;}
         
-    
+        iframe{border:none; width:100%; height:100%;}
     
     
     section{width:100%; height:1266px; background-color: #f2f3f5;margin:0 auto;

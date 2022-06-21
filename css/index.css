@@ -16,7 +16,7 @@ header{width:100%; height: 870px;
 background-image: url(../img/main4.png), linear-gradient(#262a49 50%,#b8bff0); background-size: 50%;
 background-repeat: no-repeat, repeat; background-position-y: 207px, 0px;}
 
-
+iframe{border:none; width:100%; height:100%;}
 
 
 nav{width:100%; height: 60px; background-color: #17161b; margin:0 auto;
