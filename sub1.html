@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="css/sub_mobile.css">
+    <link rel="stylesheet" href="css/sub_tablet.css">
     <link rel="stylesheet" href="css/sub_pc.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-
+    <script src="js/input_nav.js"></script>
 
 </head>
 
@@ -164,7 +167,7 @@
 
                 <div class="main_img_text">
                     <div class="text1">
-                        <h1>LAST OF US2</h1>
+                        <h1>LAST OF US 2</h1>
                         <span>AVAILABLE NOW</span>
                         <p>Five years after crossing the disease-devoured America, Ellie and Joel have settled in Jackson, Wyoming. Although threatened by infected and other desperate survivors. 
                         </p>
@@ -261,7 +264,7 @@
 
                 <div class="main_game_box game_box2">
                     <div class="main_game_img main_game2 Dream"></div>
-                    <div class="main_game_text">LAST OF US2</div>
+                    <div class="main_game_text">LAST OF US 2</div>
                 </div>
 
                 <div class="main_game_box game_box3">
@@ -321,7 +324,7 @@
                         </div>
                         <span>See More →</span>
                         <div class="game_text">
-                            <p>LAST OF US2</p>
+                            <p>LAST OF US 2</p>
                             <span>QUANTIC Dream</span>
                             <p class="pp">USD 59.00</p>
 
@@ -472,7 +475,7 @@
                 <div class="ber"></div>
 
                 <ul>
-                    <li>ALL games</li>
+                    <li class="clicked">ALL games</li>
                     <li>SALES</li>
                     <li>Action</li>
                     <li>Adventure</li>
@@ -607,6 +610,7 @@
                 $('.filer137').fadeIn();
                 $('.filer139').fadeIn();
                 $('.filer12411').fadeIn();
+                $('.filer37').fadeIn();
             });
 
             $('#filters>ul> li').eq(2).click(function () {
@@ -718,6 +722,13 @@
         $('#search input').fadeIn();
         $(this).stop().animate({transform:translateX('1000px') });
       });
+
+      
+      $('#filters>ul>li').click(function () {
+
+    $('#filters>ul>li').removeClass('clicked');
+    $(this).addClass('clicked')
+    });
 
 
         });
