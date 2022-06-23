@@ -161,8 +161,27 @@
                         <img src="sub2_img/slidea_1.jpg.png" alt="#">
                         
                     </div>
-                    <div class="slide1 slideb"></div>
-                    <div class="slide1 slidec"></div>
+                    <div class="slide1 slideb">
+                        <img src="sub2_img/clicker.png" alt="#" id="slideb_img1">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              <img src="sub2_img/el2.png" alt="#">
+                              </div>
+                              <div class="flip-card-back">
+                                <img src="sub2_img/el.png" alt="#">
+                              </div>
+                            </div>
+                          </div>
+                        <img src="sub2_img/fire.png" alt="#"  id="slideb_img3">
+                    </div>
+                    <div class="slide1 slidec">
+                        <img src="sub2_img/el3.png" alt="#">
+                        <img src="sub2_img/slidec.png" alt="#">
+                        <img src="sub2_img/slidec2.png" alt="#">
+                        <img src="sub2_img/runner.png" alt="#">
+                        <img src="sub2_img/grid.png" alt="#">
+                    </div>
                 </div>
                 </div>
                 <div id="prev"></div>
@@ -293,6 +312,17 @@
     </div>
 
 
+    <script>
+        $(function(){
+            $(window).load(function(){
+                $('.slidea img:first-of-type').css({transform: translateY(0)});
+                $('.slidea img:nth-child(2)').css({transform: translateY(0)});
+                $('.slidea img:nth-child(3)').css({transform: translateY(0)});
+            });
+
+        });
+
+    </script>
 
 
 
