@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QUANTIC DREAM</title>
     
     <link rel="stylesheet" href="css/sub_mobile.css">
     <link rel="stylesheet" href="css/sub_tablet.css">
     <link rel="stylesheet" href="css/sub_pc.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/input_nav.js"></script>
+    <script src="js/sub1_game.js"></script>
+    <script src="js/sub1_main.js"></script>
+    <script src="js/sub1_search.js"></script>
 
 </head>
 
@@ -543,196 +546,6 @@
 
     </div>
 
-    <script>
-        $(function () {
-            $('.game_box1').click(function () {
-                $('.main1').fadeIn();
-                $('.main2').hide();
-                $('.main3').hide();
-                $('.main4').hide();
-                $('.main5').hide();
-
-            });
-
-            $('.game_box2').click(function () {
-                $('.main2').fadeIn();
-                $('.main1').hide();
-                $('.main3').hide();
-                $('.main4').hide();
-                $('.main5').hide();
-
-            });
-
-            $('.game_box3').click(function () {
-                $('.main3').fadeIn();
-                $('.main2').hide();
-                $('.main1').hide();
-                $('.main4').hide();
-                $('.main5').hide();
-
-            });
-
-            $('.game_box4').click(function () {
-                $('.main4').fadeIn();
-                $('.main2').hide();
-                $('.main3').hide();
-                $('.main1').hide();
-                $('.main5').hide();
-
-            });
-
-            $('.game_box5').click(function () {
-                $('.main5').fadeIn();
-                $('.main2').hide();
-                $('.main3').hide();
-                $('.main4').hide();
-                $('.main1').hide();
-
-            });
-
-            $('.main_game_box').click(function () {
-
-                $('.main_game_box').removeClass('click');
-                $(this).addClass('click')
-            });
-
-
-            $('#filters>ul> li').eq(0).click(function () {
-                $('.game_box_box').fadeIn();
- 
-            });
-
-
-            $('#filters>ul> li').eq(1).click(function () {
-                $('.game_box_box').hide();
-                $('.filer1612').fadeIn();
-                $('.filer1710').fadeIn();
-                $('.filer137').fadeIn();
-                $('.filer139').fadeIn();
-                $('.filer12411').fadeIn();
-                $('.filer37').fadeIn();
-            });
-
-            $('#filters>ul> li').eq(2).click(function () {
-                $('.game_box_box').hide();
-                $('.filer12411').fadeIn();
-            
-            });
-
-            $('#filters>ul> li').eq(3).click(function () {
-                $('.game_box_box').hide();
-                $('.filer313').fadeIn();
-                $('.filer137').fadeIn();
-                $('.filer37').fadeIn();
-                $('.filer139').fadeIn();
-            });
-
-            $('#filters>ul> li').eq(4).click(function () {
-                $('.game_box_box').hide();
-                $('.filer12411').fadeIn();
-            
-            });
-
-            $('#filters>ul> li').eq(5).click(function () {
-                $('.game_box_box').hide();
-                $('.filer514').fadeIn();
-            
-            });
-
-            $('#filters>ul> li').eq(6).click(function () {
-                $('.game_box_box').hide();
-                $('.filer1612').fadeIn();
-                $('.filer614').fadeIn();
-                $('.filer678').fadeIn();
-                $('.filer69').fadeIn();
-                $('.filter236').fadeIn();
-            
-            });
-
-
-            $('#filters>ul> li').eq(7).click(function () {
-                $('.game_box_box').hide();
-                $('.filer678').fadeIn();
-                $('.filer1710').fadeIn();
-                $('.filer137').fadeIn();
-                $('.filer37').fadeIn();
-         
-            });
-
-            $('#filters>ul> li').eq(8).click(function () {
-                $('.game_box_box').hide();
-                $('.filer678').fadeIn();
-              
-            });
-
-            $('#filters>ul> li').eq(9).click(function () {
-                $('.game_box_box').hide();
-                $('.filer69').fadeIn();
-                $('.filer139').fadeIn();
-            
-            });
-
-            $('#filters>ul> li').eq(10).click(function () {
-                $('.game_box_box').hide();
-                $('.filer1710').fadeIn();
-       
-            });
-
-            $('#filters>ul> li').eq(11).click(function () {
-                $('.game_box_box').hide();
-                $('.filer12411').fadeIn();
-               
-            
-            });
-
-            $('#filters>ul> li').eq(12).click(function () {
-                $('.game_box_box').hide();
-                $('.filer1612').fadeIn();
-            
-            });
-
-            $('#filters>ul> li').eq(13).click(function () {
-                $('.game_box_box').hide();
-                $('.filer313').fadeIn();
-            
-            });
-
-            $('#filters>ul> li').eq(14).click(function () {
-                $('.game_box_box').hide();
-                $('.filer614').fadeIn();
-                $('.filer514').fadeIn();
-            
-            });
-
-
-            $("#myinput").on("keyup", function () {
-        var value = $(this).val().toLowerCase();
-        $(".game_text > p:first-of-type").filter(function () {
-          $(this).parents('.game_box_box').toggle($(this).text().toLowerCase().indexOf(value) > -1);
-        });
-        
-      });
-      $("#myinput").click(function () {
-        $(this).css('outline', 'none');
-      });
-
-      $('.search_icon').click(function () {
-        $('#search').stop().animate({width:'880px' });
-        
-        $('#search input').fadeIn();
-        $(this).stop().animate({transform:translateX('1000px') });
-      });
-
-      
-      $('#filters>ul>li').click(function () {
-
-    $('#filters>ul>li').removeClass('clicked');
-    $(this).addClass('clicked')
-    });
-
-
-        });
-    </script>
 
 
 

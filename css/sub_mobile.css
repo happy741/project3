@@ -4,7 +4,7 @@
     a{text-decoration: none;}
     p,span{font-family: 'Quicksand'}
     h1,h2,h3{font-family: 'Titillium Web';}
-    
+    body{background-color: #17161b;}
 
     nav{width:100%; height: 60px; background-color: #17161b; margin:0 auto;
     display: flex; justify-content: space-between;}
@@ -214,7 +214,7 @@
     }
     
     .main_img_text {
-        width: 500px;
+        width: 90%;
         height: 350px;
        
         display: flex;
@@ -227,7 +227,7 @@
     }
     
     .text1 {
-        width: 500px;
+        width: 100%;
         height: 175px;
     
     }
@@ -247,6 +247,7 @@
     .text1 p {
         font-size: 15px;
         margin-top: 5%;
+        width:100%;
     }
     
     .button_box {
@@ -289,7 +290,7 @@
     
     
     .text2 {
-        width: 500px;
+        width: 100%;
         height: 130px;
       
     }
@@ -401,7 +402,7 @@
     
     #main_box {
         width: 100%;
-        height: 1458px;
+        height: 2860px;
         background-color: #17161b;
         display: flex;
         align-items: center;
@@ -422,7 +423,7 @@
         border-radius: 1.625rem;
     
     }
-    #search >input{width:750px;
+    #search >input{width:80%;
         height: 40px;
         font-size: 18px;
         color:#fff;
@@ -442,24 +443,26 @@
     
     }
     
-    .search_icon:hover #search{width:100%;}
-    
+
+    #search_box{height: 49px;
+    width:95%;
+    margin-left:3%;}
     
     
     
     #main_box_box {
-        width:96.5%;
-        height: 1200px;
+        width:100%;
+        height: 3297px;
         display: flex;
         flex-wrap: wrap;
-    
+        margin-top:5%;
         position:relative;
     
     }
     
     #game_box {
         width:100%;
-        height: 1270px;
+        height: 2454px;
         margin-top: 3%;
       
         display: flex;
@@ -470,7 +473,7 @@
     }
     
     .game_box_box {
-        width: 200px;
+        width: 47%;
         height: 390px;
         position:relative;
         display: flex;
@@ -479,7 +482,7 @@
     }
     
     
-    .game{width:200px;
+    .game{width:100%;
             height:290px;
             clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
             transition: clip-path 0.3s;
@@ -726,7 +729,7 @@
     
     #filters {
         width: 100%;
-        height: 1200px;
+        height: 330px;
         
         display: flex;
         flex-direction: column;
@@ -752,7 +755,7 @@
     background-color: #666;}
     
     #filters ul{
-        width:90%;
+        width:95%;
         margin-top: 4%;
         display: flex;
         flex-direction: row;
@@ -760,7 +763,7 @@
     }
     
     #filters ul li{
-        width:97px;
+        width:124px;
         height:auto;
         padding:10px;
         color:#eee;
@@ -774,7 +777,7 @@
     transition:0.5s ease;}
 
  
-    footer{width:100%; height: 460px; background-color: #17161b; margin:0 auto;
+    footer{width:100%; height: 512px; background-color: #17161b; margin:0 auto;
         display:flex; flex-direction: column; align-items: center;}
         .steam{width:90%; height: 100px; align-items: center;
         display: flex; justify-content: space-evenly;}

@@ -95,7 +95,7 @@ width:241px; text-align: center; transition:1s ease; }
 .main_img {
     width: 880px;
     height: 500px;
-    background-color: coral;
+  
     margin-right: 1%;
     position:relative;
 }
@@ -308,7 +308,7 @@ width:241px; text-align: center; transition:1s ease; }
     border-radius: 1.625rem;
 
 }
-#search >input{width:750px;
+#search >input{width:85%;
     height: 40px;
     font-size: 18px;
     color:#fff;
@@ -327,6 +327,7 @@ align-items: center;
 transition:0.5s ease;
 
 }
+#search_box{width:90%;}
 
 .search_icon:hover #search{width:100%;}
 
