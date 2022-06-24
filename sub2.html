@@ -360,7 +360,9 @@
                 $('.slide1:last-child').prependTo('.slide_box');
                 $('.slide_box').css({marginLeft:-900});
                 $('.slide_box').stop().animate({marginLeft:0},function(){
-                    $('.slidea img').stop().animate({bottom:0},1000);
+                    
+                    // $('.slidea img').stop().e({bottom:0},1000);
+                    $('.slidea img').css({animation:'slide 2s alternate' });
                 });
                 
             });
