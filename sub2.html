@@ -184,8 +184,8 @@
                     </div>
                 </div>
                 </div>
-                <div id="prev"></div>
-                <div id="next"></div>
+                <div id="prev">&lt;</div>
+                <div id="next">&gt;</div>
             </div>
 
 
@@ -213,6 +213,16 @@
 
                 <h2>Tense and desperate action-survival gameplay</h2>
                 <p>New and evolved gameplay systems deliver upon the life-or-death stakes of Ellie’s journey through the hostile world. Feel her desperate struggle for survival through improved features such as high-intensity melee combat, fluid movement, and dynamic stealth. </p>
+                <div class="show_img_box">
+                    <div class="show_img show4"></div>
+                    <div class="show_img2 show1"></div>
+                    <div class="show_img2 show2"></div>
+                    <div class="show_img show3"></div>
+                  
+
+                </div>
+
+
 
                 <h2>A beautiful yet dangerous world</h2>
                 <p>Set out on Ellie’s journey, taking her from the peaceful mountains and forests of Jackson to the lush, overgrown ruins of greater Seattle. Encounter new survivor groups, unfamiliar and treacherous environments, and terrifying evolutions of the infected.</p>
@@ -224,7 +234,11 @@
                 <div id="add">
                     <div class="add_img"></div>
 
-                    <div class="add_text"></div>
+                    <div class="add_text">
+                        <span>ADD-ON</span>
+                        <h1>AVAILABLE NOW</h1>
+                        Five years after crossing the disease-devoured America, Ellie and Joel have settled in Jackson, Wyoming. Although threatened by infected and other desperate survivors.
+                    </div>
                 </div>
             </div>
 
@@ -245,10 +259,36 @@
 
             <div id="reviews">
                 <h1>Reviews</h1>
-                <div class="review_box"></div>
-                <div class="review_box"></div>
-                <div id="review_button"></div>
+                <div class="review_box">
+                    <div class="date">
+                        <span>10</span>
+                        <div class="date_box">
+                            <span>Game Insider</span><br>
+                            <span>Mar 23, 2021</span>
+                        </div>
+                    </div>
+                    <p>The Last of Us 2 is a masterful swansong for the PlayStation 4, and arguably the finest, most accomplished project Naughty Dog has ever embarked on.</p>
+                    <span>Learn more</span>
+                </div>
+
+
+                <div class="review_box">
+                    <div class="date">
+                        <span>10</span>
+                        <div class="date_box">
+                            <span>Pixelmeta</span><br>
+                            <span>Mar 28, 2021</span>
+                        </div>
+                    </div>
+                    <p>Naughty Dog delivers their best game yet –an exceptional game in every aspect. It is an incredibly shocking, epic, terrifying action adventure with an unforgettable story.</p>
+                    <span>Learn more</span>
+
+                </div>
+                <div class="button_box">
+                <div id="review_button">VIEW ALL REVIEWS</div>
+                </div>
             </div>
+            
 
             <div id="pc"></div>
 
@@ -313,14 +353,45 @@
 
 
     <script>
+
+// $('.slidea img').stop().css({bottom:0});
         $(function(){
-            $(window).load(function(){
-                $('.slidea img:first-of-type').css({transform: translateY(0)});
-                $('.slidea img:nth-child(2)').css({transform: translateY(0)});
-                $('.slidea img:nth-child(3)').css({transform: translateY(0)});
+            $('#prev').click(function(){
+                $('.slide1:last-child').prependTo('.slide_box');
+                $('.slide_box').css({marginLeft:-900});
+                $('.slide_box').stop().animate({marginLeft:0},function(){
+                    $('.slidea img').stop().animate({bottom:0},1000);
+                });
+                
             });
 
+            $('#next').click(function(){
+                $('.slide_box').stop().animate({marginLeft:-900},
+                function(){
+                    $('.slide1:first-child').appendTo('.slide_box');
+               
+                $('.slide_box').css({marginLeft:0});
+                
+});
+            }); 
+
+      
+            $('.slidea img').eq(0).stop().animate({transform: translateY(0)});
+   
+ 
+           
+   
+
+
         });
+
+
+
+        // $(window).onload(function(){
+        //     $('.slidea img').eq(1).stop().animate({transform: translateY(0)});
+        // });
+
+
 
     </script>
 
