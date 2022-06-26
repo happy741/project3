@@ -137,7 +137,7 @@
 
         <div class="back">
             <div id="back_text">
-            <span>Back to Store</span>
+            <img src="sub2_img/left-arrow.png" alt=""> <span>Back to Store</span>
             <div class="back_bar"></div>
             <span>QUANTIC DREAM</span>
             </div>
@@ -176,11 +176,13 @@
                         <img src="sub2_img/fire.png" alt="#"  id="slideb_img3">
                     </div>
                     <div class="slide1 slidec">
-                        <img src="sub2_img/el3.png" alt="#">
+                        <!-- <img src="sub2_img/el3.png" alt="#">
                         <img src="sub2_img/slidec.png" alt="#">
                         <img src="sub2_img/slidec2.png" alt="#">
                         <img src="sub2_img/runner.png" alt="#">
-                        <img src="sub2_img/grid.png" alt="#">
+                        <img src="sub2_img/grid.png" alt="#"> -->
+                        <img src="sub2_img/slidec3.png" alt="#">
+                        <div class="rain"></div>
                     </div>
                 </div>
                 </div>
@@ -189,9 +191,8 @@
             </div>
 
 
-
             <div id="intro">
-                <img src="img/win.png" alt=""><br>
+                <img src="img/win2.png" alt=""><br>
                 <span>ACTION ADVENTURE</span>
                 <span>SURVIVAL</span>
                 <p>Five years after their dangerous journey across the post-pandemic United States, Ellie and Joel have settled down in Jackson, Wyoming. Living amongst a thriving community of survivors has allowed them peace and stability, despite the constant threat of the infected and other, more desperate survivors.
@@ -205,6 +206,10 @@
                     <li>Release Date: Winter 2022</li>
                 </ul>
                 
+            </div>
+            
+            <div class="slide_toggle">
+                <p>Show More</p> <img src="sub2_img/down-arrow.png" alt="">
             </div>
 
             <div id="show">
@@ -258,7 +263,7 @@
             </div>
 
             <div id="reviews">
-                <h1>Reviews</h1>
+                <h1>Reviews:</h1>
                 <div class="review_box">
                     <div class="date">
                         <span>10</span>
@@ -285,16 +290,69 @@
 
                 </div>
                 <div class="button_box">
-                <div id="review_button">VIEW ALL REVIEWS</div>
+                <div id="review_button"> <span>VIEW ALL REVIEWS</span> 
+                    <div id="review_button_tri1"></div>
+                    <div id="review_button_tri2"></div>
+
+                </div>
                 </div>
             </div>
             
 
-            <div id="pc"></div>
+            <div id="pc">
+                <h1>PC space:</h1>
+                <div class="pc_box_box">
+                <div class="pc_box">
+                <p>MINIMUM</p><br>
+                <ul>
+                    <li>OS: Windows 10 (64bit)</li>
+                    <li>Processor: Intel Core i5-2300 @ 2.8 GHz or Ryzen 3 1200 @ 3.1GHz or AMD FX-8350 @ 4.2GHz </li>
+                    <li>Memory: 8GB RAM</li>
+                    <li>Video: Nvidia GeForce GTX 780 or AMD HD 7950 (Support of Vulkan 1.1 required)</li>
+                    <li>Video RAM: 3GB or more</li>
+                    <li>Hard Drive : 55 GB</li>
+                </ul>
+                </div>
+                </div>
+
+                <div class="pc_box_box">
+                <div class="pc_box">
+                    <p>RECOMMENDED</p><br>
+                    <ul>
+                        <li>OS: Windows 10 (64bit)</li>
+                        <li>Processor: i5-6600 @ 3.3 GHz or Ryzen 3 1300 X @ 3.4 GHz </li>
+                        <li>Memory: 12GB RAM</li>
+                        <li>Video: Nvidia GeForce GTX 1060 or AMD Radeon RX 580 (Support of Vulkan 1.1 required)</li>
+                        <li>Video RAM: 4GB or more</li>
+                        <li>Hard Drive : 55 GB</li>
+                    </ul>
+                    </div>
+                    </div>
+
+
+            </div>
 
         </div>
 
-        <div id="sticky"></div>
+        <div id="sticky">
+            <div id="sticky_box">
+                <div id="sticky_img">
+
+                </div>
+                <div class="sticky_text">
+                <span>BASE GAME</span><br>
+                <span>-20%</span>
+                <span>UDS 59.00</span><br>
+                <span>Sale ends 25/04/2022</span>
+                </div>
+                <div class="sticky_button">
+                        <p> BUY NOW</p>
+                        <div class="sticky_button_tri1"></div>
+                        <div class="sticky_button_tri2"></div>
+                </div>
+            </div>
+
+        </div>
 
 
 </div>
@@ -361,31 +419,81 @@
                 $('.slide_box').css({marginLeft:-900});
                 $('.slide_box').stop().animate({marginLeft:0},function(){
                     
-                    // $('.slidea img').stop().e({bottom:0},1000);
-                    $('.slidea img').css({animation:'slide 2s alternate' });
+                    $('.slidea img').eq(2).css({animation:'slidea 2s alternate' });
+                    $('.slidea img').eq(1).css({animation:'slidea 1s alternate'});
+                    $('.slidea img').eq(0).css({animation:'slidea_2 1s alternate'});
+                    //slidea
+
+                    $('#slideb_img3').css({animation:'slidea_2 1s alternate'});
+                    $('#slideb_img1').css({animation:'scale 1.5s alternate'});
+                    $('.flip-card-inner').css({animation:'flip 2s alternate'});
+                    //slideb
                 });
                 
             });
 
             $('#next').click(function(){
-                $('.slide_box').stop().animate({marginLeft:-900},
-                function(){
-                    $('.slide1:first-child').appendTo('.slide_box');
-               
-                $('.slide_box').css({marginLeft:0});
                 
-});
+                $('.slide_box').stop().animate({marginLeft:-900},
+                function(){ 
+                
+                    $('.slide1:first-child').appendTo('.slide_box');
+                    
+                $('.slide_box').css({marginLeft:0});
+                });
+                $('.slidea img').eq(2).css({animation:'slidea 2s alternate twice' });
+                    $('.slidea img').eq(1).css({animation:'slidea 1s alternate'});
+                    $('.slidea img').eq(0).css({animation:'slidea_2 1s alternate'});
+                    //slidea
+
+                    $('#slideb_img3').css({animation:'slidea_2 1s alternate'});
+                    $('#slideb_img1').css({animation:'scale 1.5s alternate'});
+                    $('.flip-card-inner').css({animation:'flip 2s alternate'});
+                    //slideb
+                
             }); 
 
+           
+
+            $('.slide_toggle').click(function(){
+                    $('#show').slideToggle();
+                });
+
       
-            $('.slidea img').eq(0).stop().animate({transform: translateY(0)});
-   
+        
+                $('.slidea img').eq(2).css({animation:'slidea 2s alternate' });
+                    $('.slidea img').eq(1).css({animation:'slidea 1s alternate'});
+                    $('.slidea img').eq(0).css({animation:'slidea_2 1s alternate'});
+                  //slidea
+                  
  
            
    
 
 
         });
+
+        var nbDrop = 858; 
+
+// function to generate a random number range.
+function randRange( minNum, maxNum) {
+  return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+}
+
+// function to generate drops
+function createRain() {
+
+  for( i=1;i<nbDrop;i++) {
+  var dropLeft = randRange(0,1600);
+  var dropTop = randRange(-1000,1400);
+
+  $('.rain').append('<div class="drop" id="drop'+i+'"></div>');
+  $('#drop'+i).css('left',dropLeft);
+  $('#drop'+i).css('top',dropTop);
+  }
+
+}
+createRain();
 
 
 
