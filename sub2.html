@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUANTIC DREAM</title>
     <link rel="stylesheet" href="css/sub2_pc.css">
+    <link rel="stylesheet" href="css/sub2_tablet.css">
+    <link rel="stylesheet" href="css/sub2_mobile.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/input_nav.js"></script>
 
@@ -19,9 +21,9 @@
 
             <nav>
                 <div class="logo_box">
-                    <div class="logo"><img src="img/logo.png" alt="#"></div>
+                    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="#"></a></div>
                     <div class="logo_bar"></div>
-                    <div class="logo_text"><img src="img/logo2.png" alt="#"></div>
+                    <div class="logo_text"><a href="index.html"><img src="img/logo2.png" alt="#"></a></div>
                     <ul class="menu">
                         <li><a href="#"> GAMES</a>
                             <ul class="sub">
@@ -166,7 +168,7 @@
                         <div class="flip-card">
                             <div class="flip-card-inner">
                               <div class="flip-card-front">
-                              <img src="sub2_img/el2.png" alt="#">
+                              <img src="sub2_img/el2.png" alt="#" id="slideb_img2">
                               </div>
                               <div class="flip-card-back">
                                 <img src="sub2_img/el.png" alt="#">
@@ -181,13 +183,13 @@
                         <img src="sub2_img/slidec2.png" alt="#">
                         <img src="sub2_img/runner.png" alt="#">
                         <img src="sub2_img/grid.png" alt="#"> -->
-                        <img src="sub2_img/slidec3.png" alt="#">
+                        <!-- <img src="sub2_img/slidec3.png" alt="#"> -->
                         <div class="rain"></div>
                     </div>
                 </div>
                 </div>
-                <div id="prev">&lt;</div>
-                <div id="next">&gt;</div>
+                <div id="prev"><div id="prev_arrow"></div></div>
+                <div id="next"><div id="next_arrow"></div></div>
             </div>
 
 
@@ -273,6 +275,7 @@
                         </div>
                     </div>
                     <p>The Last of Us 2 is a masterful swansong for the PlayStation 4, and arguably the finest, most accomplished project Naughty Dog has ever embarked on.</p>
+                    
                     <span>Learn more</span>
                 </div>
 
@@ -342,7 +345,7 @@
                 <div class="sticky_text">
                 <span>BASE GAME</span><br>
                 <span>-20%</span>
-                <span>UDS 59.00</span><br>
+                <span>UDS 47.00</span><br>
                 <span>Sale ends 25/04/2022</span>
                 </div>
                 <div class="sticky_button">
@@ -386,7 +389,7 @@
             <div class="footer_menu">
 
                 <div class="footer_menu_box">
-                    <div class="logo2"><img src="img/logo.png" alt="#"></div>
+                    <div class="logo2"><a href="index.html"> <img src="img/logo.png" alt="#"></a></div>
                     <ul>
                         <li><a href="#">SUPPORT</a> </li>
                         <li><a href="#">ABOUT US</a></li>
@@ -433,14 +436,7 @@
             });
 
             $('#next').click(function(){
-                
-                $('.slide_box').stop().animate({marginLeft:-900},
-                function(){ 
-                
-                    $('.slide1:first-child').appendTo('.slide_box');
-                    
-                $('.slide_box').css({marginLeft:0});
-                });
+
                 $('.slidea img').eq(2).css({animation:'slidea 2s alternate twice' });
                     $('.slidea img').eq(1).css({animation:'slidea 1s alternate'});
                     $('.slidea img').eq(0).css({animation:'slidea_2 1s alternate'});
@@ -451,7 +447,33 @@
                     $('.flip-card-inner').css({animation:'flip 2s alternate'});
                     //slideb
                 
+                $('.slide_box').stop().animate({marginLeft:-900},
+                function(){ 
+                
+                    $('.slide1:first-child').appendTo('.slide_box');
+                    
+                      $('.slide_box').css({marginLeft:0});
+
+                
+                });
+
+                
+                
             }); 
+
+
+
+            // $('.slide_box').css({marginLeft:0},function(){
+            //         $('.slidea img').eq(2).css({animation:'slidea 2s alternate twice' });
+            //         $('.slidea img').eq(1).css({animation:'slidea 1s alternate'});
+            //         $('.slidea img').eq(0).css({animation:'slidea_2 1s alternate'});
+            //         //slidea
+
+            //         $('#slideb_img3').css({animation:'slidea_2 1s alternate'});
+            //         $('#slideb_img1').css({animation:'scale 1.5s alternate'});
+            //         $('.flip-card-inner').css({animation:'flip 2s alternate'});
+            //         //slideb
+            // });
 
            
 

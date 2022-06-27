@@ -18,12 +18,12 @@
     
     nav{width:100%; height: 60px; background-color: #17161b; margin:0 auto;
     display: flex; justify-content: space-between;}
-    .logo_box{display: flex; align-items: center;}
+    .logo_box{display: flex; align-items: center; margin-left:2%;}
     .logo_bar{width:2px; height: 30px; background-color: #444;}
     .logo_box img{width:70%;}
     .logo{width:10%; height: 60px; display: flex;
     align-items: center; justify-content: center;}
-    .logo_text{width:30%; height: 60px;
+    .logo_text{width:30%; height: 60px; margin-left:2%;
         display: flex;
         align-items: center; justify-content: center;}
     .my_box{width:350px; height: 60px;
@@ -494,8 +494,8 @@
     
     
        
-    .art_img_box{width:600px; height: 1000px; background-color: rgb(122, 107, 48);}
-    .art_text3{width:600px; height: 600px; background-color: #74dfe7;}
+    .art_img_box{width:600px; height: 1000px; }
+    .art_text3{width:600px; height: 600px;}
     .art_img_box2{width:100%; height:500px; background-color:#eee;
     background-image: url(../img/img4.jpg); background-size: cover;
     background-position: 50%; position:relative;}
@@ -522,8 +522,8 @@
     .news1_img{width:95%; height: 350px;}
     .news1_text{width:400px; height: 110px; transition:0.3s ease;
     display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;}
-    .news1_text h3{font-family: 'Quicksand'; font-size: 2vw}
-    .news1_text p{font-size:1.5vw; width:38vw}
+    .news1_text h3{font-family: 'Quicksand'; font-size: 2vw; cursor:pointer;}
+    .news1_text p{font-size:1.5vw; width:38vw;cursor:pointer;}
     .new_tri{border-bottom: 60px solid #e0d9f6;
         border-left: 60px solid transparent;  position:absolute;
        top:-60px; right:0;}
@@ -538,12 +538,12 @@
     .news2_text{width:100%; height: 47px; 
     display: flex; align-items: center; justify-content: center;}
     .news2_text p{font-size:1.5vw; text-align: center;  transition:0.3s ease;
-    width:22vw;}
+    width:22vw; cursor:pointer;}
     .news2_tri{width:40px; height: 44px; background-color: #e0d9f6; position:absolute;
     top:-19px; left:-19px; transform: rotate(45deg); border-right: 4px solid white; }
     .new_box{width:100%; height: 30px; display: flex;
     align-items: flex-end;}
-    .new_box span{background-color: #c252e1; padding:1px; font-size: 1.7vw;}
+    .new_box span{background-color: #c252e1; padding:1px; font-size: 1.7vw; }
     
     .news2:hover .news2_text p{color:#c252e1;}
     .news1:hover .news1_text{color:#c252e1;}
@@ -562,7 +562,7 @@
     align-items: center;}
     .stay_icon{width:50px; height: 40px;
     display: flex; align-items: center; justify-content: center;}
-    .stay_icon img{  width:38%; transition:0.5s ease;}
+    .stay_icon img{  width:38%; transition:0.5s ease; cursor:pointer;}
     .stay_icon:hover >img{transform: scale(1.3); cursor:pointer;}
     
     
@@ -608,7 +608,7 @@
     .email_input2{width:50%; height:40px; border:1px solid #ffffff;
     display: flex; justify-content: center; align-items: center;
     font-size: 1.7vw; color:#fff;transition: .4s ease-in-out; margin-top:5%;
-    position:relative;}
+    position:relative; cursor:pointer;}
     
     .email_input2::before{content: ""; width:0%; height:2px; position:absolute;
         background:#c252e1; transition: .4s ease-in-out;}
@@ -635,7 +635,7 @@
     .steam{width:80%; height: 150px; align-items: center;
     display: flex; justify-content: space-evenly;}
     .steam_iicon{width:150px; height:30px;}
-    .steam_iicon img{width:70%;}
+    .steam_iicon img{width:70%; cursor:pointer;}
     
     .footer_text{width:100%; height:200px;
     display: flex; align-items: center; justify-content: space-around;}
@@ -657,7 +657,7 @@
     
     .footer_icon{width:200px; height:100px; display: flex; align-items: center;
         justify-content: space-evenly;} 
-        .footer_icon img{width:20px;}
+        .footer_icon img{width:20px;cursor:pointer;}
     
     
         /* 애니메이션 */
