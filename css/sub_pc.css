@@ -142,6 +142,7 @@ width:241px; text-align: center; transition:1s ease; }
     position:relative;
     margin-top:3%;
    cursor:pointer;
+   color:#fff;
 }
 
 #circle{
@@ -349,6 +350,7 @@ transition:0.5s ease;
 
 }
 
+
 #game_box {
     width: 880px;
     height:  auto;
@@ -370,6 +372,8 @@ transition:0.5s ease;
     margin:1.1%;
     cursor: pointer;
 }
+
+
 
 
 .game{width:200px;
@@ -490,6 +494,7 @@ z-index: 5;}
 }
 .game_text p {
     font-size: 14px;
+    color:#fff;
     font-weight: 500;
 }
 

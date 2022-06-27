@@ -207,6 +207,7 @@
     position:relative;
     margin-top:3%;
     cursor: pointer;
+    color:#fff;
 }
 
 #circle{
@@ -553,6 +554,7 @@ z-index: 5;}
 .game_text p {
     font-size: 14px;
     font-weight: 500;
+    color:#fff;
 }
 
 .game_text span {
