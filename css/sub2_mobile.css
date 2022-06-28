@@ -173,10 +173,10 @@
     position:relative;}
     .slidea img:first-of-type{position:absolute; 
     transition:0.5s ease;}
-    .slidea img:nth-child(2){width:30%; position:absolute; right:70%; bottom:-10px;
+    .slidea img:nth-child(2){width:30%; position:absolute; right:78%; bottom:-10px;
     
         transition:0.5s ease;}
-    .slidea img:nth-child(3){position:absolute; right:50%; bottom:-10px;
+    .slidea img:nth-child(3){position:absolute; right:58%; bottom:-10px;
        
         transition:0.5s ease;}
     
@@ -190,10 +190,10 @@
     
     .slideb{background-image: url(../sub2_img/slide3.jpg); background-size: cover;
     position:relative; }
-    #slideb_img1{position:absolute; bottom:0px; right:45%; 
-    transition:0.5s ease; width:35%;}
+    #slideb_img1{position:absolute; bottom:0px; right:55%; 
+    transition:0.5s ease; width:25%;}
 
-    #slideb_img3{position:relative; width:15%;
+    #slideb_img3{position:relative; width:10%;
         transition:0.5s ease;}
     
     
@@ -250,7 +250,8 @@
     
     
     .flip-card-inner{
-        position:absolute; bottom:-117px; left:-35%;
+        position:absolute; bottom:-200px; left:-40%;
+    
     }
     
       .flip-card-inner {
@@ -276,6 +277,11 @@
       .flip-card-front {
         background-color: #bbb;
         color: black;
+     
+      }
+
+      .flip-card-inner img{
+        width:25%;
       }
       
       .flip-card-back {transform: rotateY(180deg);}
