@@ -68,7 +68,7 @@
     top:-97px; right:-60px; background-color: rgba(0, 0, 0, 0.9); border-radius: 20%;
         transition:0.5s ease;
     }
-    .overlay_menu{position: relative; width: 100%; text-align: center; display:block; margin:154px 0 0 227px; 
+    .overlay_menu{position: relative; width: 100%; text-align: center; display:block; margin:154px 0 0 210px; 
         }
     .overlay_menu> li{ padding:2%;} 
     .overlay_menu> li>a{color:#fff; font-size: 35px;  font-family: 'Titillium Web';
