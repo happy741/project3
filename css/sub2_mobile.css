@@ -68,7 +68,7 @@
     top:-97px; right:-60px; background-color: rgba(0, 0, 0, 0.9); border-radius: 20%;
         transition:0.5s ease;
     }
-    .overlay_menu{position: relative; width: 100%; text-align: center; display:block; margin:154px 0 0 281px; 
+    .overlay_menu{position: relative; width: 100%; text-align: center; display:block; margin:154px 0 0 227px; 
         }
     .overlay_menu> li{ padding:2%;} 
     .overlay_menu> li>a{color:#fff; font-size: 35px;  font-family: 'Titillium Web';
@@ -287,13 +287,13 @@
       .flip-card-back {transform: rotateY(180deg);}
     
     
-    #intro{width:95%; height:425px; margin-top:10%;
+    #intro{width:95%; height:500px; margin-top:10%;
     margin-left:5%;}
     #intro span{background-color: #fff; color:#c252e1;
     padding:2px; font-weight: 600; font-size: 13px; }
-    #intro img{width:20%}
-    #intro p{color:#ddd; margin-top:2%;}
-    #intro ul{margin-top:2%; color:#fff; margin-left:3%;}
+    #intro img{width:35% ;margin-bottom:5%;}
+    #intro p{color:#ddd; margin-top:7%;}
+    #intro ul{margin-top:7%; color:#fff; margin-left:3%;}
     #intro ul li{list-style: url(../sub2_img/liststyle2.png);
     padding:1%;}
     
