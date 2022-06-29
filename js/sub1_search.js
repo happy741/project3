@@ -1,7 +1,7 @@
 $(function(){
 $("#myinput").on("keyup", function () {
     var value = $(this).val().toLowerCase();
-    $(".game_text > p:first-of-type").filter(function () {
+    $(".search_filter").filter(function () {
       $(this).parents('.game_box_box').toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
     

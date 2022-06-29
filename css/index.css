@@ -27,7 +27,7 @@ display: flex; justify-content: space-between;}
 .logo_box img{width:60%;}
 .logo{width:70px; height: 60px; display: flex;
 align-items: center; justify-content: center;}
-.logo_text{width:150px; height: 60px;margin-left:1%;
+.logo_text{width:150px; height: 60px;
     display: flex;
     align-items: center; justify-content: center;}
 .my_box{width:350px; height: 60px;
