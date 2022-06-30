@@ -1,5 +1,6 @@
 
                 $(function() {
+                    
                 $('#input1').click(function(){
                     $(this).css('outline','none');
                 });

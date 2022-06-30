@@ -21,7 +21,7 @@ display: flex; justify-content: space-between;}
 .logo_box img{width:60%; cursor:pointer}
 .logo{width:70px; height: 60px; display: flex;
 align-items: center; justify-content: center;}
-.logo_text{width:150px; height: 60px;
+.logo_text{width:20%; height: 60px;
     display: flex;
     align-items: center; justify-content: center;}
 .my_box{width:350px; height: 60px;
@@ -93,8 +93,8 @@ width:241px; text-align: center; transition:1s ease; }
 
 
 
-#box{display: flex; width:1200px; margin:0 auto;height: auto;}
-.back{width:1200px; height:100px;margin:0 auto; border-bottom: 1px solid #333;
+#box{display: flex; width:63%; margin:0 auto;height: auto;}
+.back{width:65%; height:100px;margin:0 auto; border-bottom: 1px solid #333;
 display: flex; align-items: center; justify-content: space-between;
 cursor:pointer}
 .back span{font-size: 15px; color:#fff; transition:0.3s ease;}
@@ -119,7 +119,7 @@ font-size: 15px; color:#fff;}
 
 #slide{width:100%; height:589px; position:relative;
 border-top: #444; display: flex; flex-wrap: wrap; color:#fff;}
-.slide_box_box{width:100%; height:400px; 
+.slide_box_box{width:99%; height:400px; 
 overflow: hidden; }
 .slide_box{width:2700px; height:400px; display: flex;}
 .slide1{width:900px; height:100%; overflow: hidden;
@@ -366,7 +366,7 @@ color:#aaa;}
 
 
 
-#sticky{width:20%; height:auto;
+#sticky{width:25%; height:auto;
 position:sticky; margin-top:9.5%;}
 #sticky_box{width:100%; height:578px;
 position:sticky; top:0;}
@@ -424,21 +424,21 @@ position:absolute; left:-250px; transform: skew(-40deg);}
 
 
 /*  footer    footer       footer       footer       footer       footer       footer        */
-footer{width:100%; height: 460px; background-color: #17161b; margin:0 auto;
+footer{width:65%; height: 460px; background-color: #17161b; margin:0 auto;
     display:flex; flex-direction: column; align-items: center;}
     .steam{width:915px; height: 150px; align-items: center;
     display: flex; justify-content: space-evenly;}
     .steam_iicon{width:150px; height:30px;}
     .steam_iicon img{width:120px; cursor:pointer;}
     
-    .footer_text{width:1200px; height:200px;
+    .footer_text{width:100%; height:200px;
     display: flex; align-items: center; justify-content: space-around;}
     .esrb{width:150px; height: 200px; }
     .footer_text p{width:72%; color:#999;}
     
     
-    .footer_bar{width:1150px; height:2px; background-color:#333;}
-    .footer_menu{width:1200px; height:100px; 
+    .footer_bar{width:100%; height:2px; background-color:#333;}
+    .footer_menu{width:100%; height:100px; 
     display: flex; justify-content: space-between;}
     .footer_menu_box ul{display: flex;}
     .footer_menu_box{display: flex; align-items: center;}

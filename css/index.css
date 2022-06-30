@@ -636,11 +636,6 @@ justify-content: center; align-items: center; display: flex;}
         100%{top:12px;  right:-10px; z-index: 3;}
     }
     
-    /* modal */
-    @keyframes zoom {
-        from {transform:scale(0)} 
-        to {transform:scale(1)}
-      }
 
     @keyframes rotate{
         0%{transform: rotate(-180deg)scale(1);}

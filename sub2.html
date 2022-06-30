@@ -416,89 +416,60 @@
     <script>
 
 // $('.slidea img').stop().css({bottom:0});
+    
         $(function(){
+            function ani(){
+                $('.slidea img').eq(2).css({animation:'slidea 2s alternate' });
+                $('.slidea img').eq(1).css({animation:'slidea 1s alternate'});
+                $('.slidea img').eq(0).css({animation:'slidea_2 1s alternate'});
+                //slidea
+
+                $('#slideb_img3').css({animation:'slidea_2 1s alternate'});
+                $('#slideb_img1').css({animation:'scale 1.5s alternate'});
+                $('.flip-card-inner').css({animation:'flip 2s alternate'});
+                //slideb
+            }
+
+            ani();
+
+            function removeani(){
+                $('.slidea img').eq(2).css({animation:'' });
+                $('.slidea img').eq(1).css({animation:''});
+                $('.slidea img').eq(0).css({animation:''});
+                //slidea
+
+                $('#slideb_img3').css({animation:''});
+                $('#slideb_img1').css({animation:''});
+                $('.flip-card-inner').css({animation:''});
+                //slideb
+            }
+
             $('#prev').click(function(){
+                removeani();
+
                 $('.slide1:last-child').prependTo('.slide_box');
                 $('.slide_box').css({marginLeft:-900});
-                $('.slide_box').stop().animate({marginLeft:0},function(){
-                    
-                    $('.slidea img').eq(2).css({animation:'slidea 2s alternate' });
-                    $('.slidea img').eq(1).css({animation:'slidea 1s alternate'});
-                    $('.slidea img').eq(0).css({animation:'slidea_2 1s alternate'});
-                    //slidea
-
-                    $('#slideb_img3').css({animation:'slidea_2 1s alternate'});
-                    $('#slideb_img1').css({animation:'scale 1.5s alternate'});
-                    $('.flip-card-inner').css({animation:'flip 2s alternate'});
-                    //slideb
-                });
-                
+                $('.slide_box').stop().animate({marginLeft:0},ani);
             });
 
             $('#next').click(function(){
-                  $('.slide_box').stop().animate({marginLeft:-900},
-                function(){ 
+                removeani();
                 
-                    $('.slide1:first-child').appendTo('.slide_box');
-                    
-                      $('.slide_box').css({marginLeft:0});
-                
+                $('.slide_box').stop().animate({marginLeft:-900},function(){                 
+                    $('.slide1:first-child').appendTo('.slide_box');                    
+                    $('.slide_box').css({marginLeft:0});
+                    ani();
                 });
 
-
-
-                    $('.slidea img').eq(2).css({animation:'slidea 2s alternate 1s' });
-                    $('.slidea img').eq(1).css({animation:'slidea 1s alternate 1s' });
-                    $('.slidea img').eq(0).css({animation:'slidea_2 1s alternate 1s'});
-                    //slidea
-
-                    $('#slideb_img3').css({animation:'slidea_2 1s alternate'});
-                    $('#slideb_img1').css({animation:'scale 1.5s alternate'});
-                    $('.flip-card-inner').css({animation:'flip 2s alternate'});
-                    //slideb
-    
-               
                 
-              
-          
-
-                
-                
+                          
             }); 
 
 
-
-            // $('.slide_box').css({marginLeft:0},function(){
-            //         $('.slidea img').eq(2).css({animation:'slidea 2s alternate twice' });
-            //         $('.slidea img').eq(1).css({animation:'slidea 1s alternate'});
-            //         $('.slidea img').eq(0).css({animation:'slidea_2 1s alternate'});
-            //         //slidea
-
-            //         $('#slideb_img3').css({animation:'slidea_2 1s alternate'});
-            //         $('#slideb_img1').css({animation:'scale 1.5s alternate'});
-            //         $('.flip-card-inner').css({animation:'flip 2s alternate'});
-            //         //slideb
-            // });
-
-           
-
-            $('.slide_toggle').click(function(){
-                    $('#show').slideToggle();
-                });
-
-      
-        
-                $('.slidea img').eq(2).css({animation:'slidea 2s alternate' });
-                    $('.slidea img').eq(1).css({animation:'slidea 1s alternate'});
-                    $('.slidea img').eq(0).css({animation:'slidea_2 1s alternate'});
-                  //slidea
-                  
- 
-           
-   
-
-
         });
+
+
+  
 
         var nbDrop = 858; 
 
@@ -521,21 +492,6 @@ function createRain() {
 
 }
 createRain();
-
-
-
-        // $(window).onload(function(){
-        //     $('.slidea img').eq(1).stop().animate({transform: translateY(0)});
-        // });
-
-
-    var next=document.getElementById('next');
-    next.onclick=function(e){
-     documnet.getElementById('slideb_img1').animate({transform: scale(1)});
-    }
-
-
-
 
     </script>
 

@@ -20,7 +20,7 @@ display: flex; justify-content: space-between;}
 .logo_box img{width:60%;}
 .logo{width:70px; height: 60px; display: flex;
 align-items: center; justify-content: center;}
-.logo_text{width:150px; height: 60px;
+.logo_text{width:20%; height: 60px;
     display: flex;
     align-items: center; justify-content: center;}
 .my_box{width:350px; height: 60px;
@@ -384,13 +384,7 @@ transition:0.5s ease;
         }
 
 
-.game1 {
-    background-image: url(../subimg/main1_1.jpg);
-    background-size: cover;
-    background-position: center;
-    
-    
-}
+
 .game:hover{clip-path: polygon(72% 0, 100% 50%, 75% 100%, 0% 100%, 22% 49%, 0% 0%);
     
 
@@ -401,6 +395,15 @@ transition:0.5s ease;
     transform: translateX(15px);
     transition:0.3s ease;
  }
+
+ 
+.game1 {
+    background-image: url(../subimg/main1_1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
 
 
     .game +span{
