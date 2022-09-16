@@ -89,7 +89,7 @@
                     </label>
                 </div>
                 <div id="myNav" class="overlay">
-                    <a href="index.html" class="close_2" onclick="closeNav()">&times;</a>
+                    <a href="#" class="close_2" onclick="closeNav()">&times;</a>
 
                     <div>
                         <ul class="overlay_menu">
@@ -418,6 +418,10 @@
 // $('.slidea img').stop().css({bottom:0});
     
         $(function(){
+            $('.slide_toggle').click(function(){
+                    $('#show').slideToggle();
+                });
+                
             function ani(){
                 $('.slidea img').eq(2).css({animation:'slidea 2s alternate' });
                 $('.slidea img').eq(1).css({animation:'slidea 1s alternate'});
